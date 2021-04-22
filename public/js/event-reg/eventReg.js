@@ -1,6 +1,6 @@
 const modules = [
     {
-        moduleName: "Empessario",
+        moduleName: "Empressario",
         events: [
             {
                 eventName: "Pitch Please",
@@ -76,7 +76,7 @@ const modules = [
                 maxm: 5           
             },
             {
-                eventName: "Minmi-Militia",
+                eventName: "Mini-Militia",
                 teamBased: true,
                 minm: 1,
                 maxm: 4
