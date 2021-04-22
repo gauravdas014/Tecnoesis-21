@@ -1,12 +1,12 @@
-module.export = {
+module.exports = {
     Modules:{
-        'robotics': 'robotics',
-        'v-warz' : 'v-warz',
-        'cyberwarp' : 'cyberwarp',
-        'conferenza' : 'conferenza',
-        'smart-city' : 'smart-city',
-        'myndsnare' : 'myndsnare',
-        'empressario': 'empressario',
-        'asme' : 'asme',
+        'robotics': 'robotics.html',
+        'v-warz' : 'v-warz.html',
+        'cyberwarp' : 'cyberwarp.html',
+        'conferenza' : 'conferenza.html',
+        'smart-city' : 'smart-city.html',
+        'myndsnare' : 'myndsnare.html',
+        'empressario': 'empressario.html',
+        'asme' : 'asme.html',
     }
 }
