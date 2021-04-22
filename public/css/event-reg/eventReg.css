@@ -12,65 +12,29 @@ input {
   padding: 0.5rem 0.3rem;
   border: none;
   border-bottom: 1px solid rgba(134, 134, 134, 0.274);
-  font-size: medium;
 }
 
 input:focus {
   outline: none;
 }
 
+select, option {
+  padding: 0.5rem;
+}
+
 .outContainer {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: rgba(8, 165, 238, 0.76);
 }
 
-.outContainer .inContainer {
-  height: 90vh;
-  width: 90vw;
-  position: absolute;
-  top: 5vh;
-  left: 5vw;
+.outContainer .event_registration {
   background-color: white;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.outContainer .inContainer .head {
-  height: 10%;
-  padding: 1rem;
-  font-size: 1.9rem;
-}
-
-.outContainer .inContainer .main {
-  height: 80%;
-  width: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.outContainer .inContainer .main .leftInContainer, .outContainer .inContainer .main .rightInContainer {
-  height: 100%;
-  width: 50%;
-  top: 10%;
+  min-height: 90vh;
+  width: 60vw;
+  top: 5vh;
+  left: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,9 +47,53 @@ input:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 10vh;
 }
 
-.outContainer .inContainer .main .leftInContainer .fl, .outContainer .inContainer .main .rightInContainer .fl {
+.outContainer .event_registration .head {
+  font-size: 40px;
+  color: #0a375c;
+}
+
+.outContainer .event_registration .eventRegForm {
+  min-height: 90vh;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.outContainer .event_registration .eventRegForm .plus_e {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.outContainer .event_registration .eventRegForm .plus_e label {
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: large;
+}
+
+.outContainer .event_registration .eventRegForm .plus_e button {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: large;
+}
+
+.outContainer .event_registration .eventRegForm .fl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,82 +105,45 @@ input:focus {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 40vw;
+  margin-top: 2%;
 }
 
-.outContainer .inContainer .main .leftInContainer .fl select, .outContainer .inContainer .main .leftInContainer .fl option, .outContainer .inContainer .main .rightInContainer .fl select, .outContainer .inContainer .main .rightInContainer .fl option {
-  padding: 0.5rem;
+.outContainer .event_registration .eventRegForm .team_event {
+  margin-top: 2rem;
 }
 
-.outContainer .inContainer .main .leftInContainer {
-  height: 70%;
-  margin-top: -5%;
-}
-
-.outContainer .inContainer .main .leftInContainer .team_event {
-  height: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.outContainer .inContainer .main .rightInContainer .indivisual {
-  margin-top: 5%;
-  height: 65%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.outContainer .inContainer .main .rightInContainer .plus_e {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-
-.outContainer .inContainer .main .rightInContainer .plus_e label {
-  margin-right: 10px;
-  font-weight: 600;
-  font-size: large;
-}
-
-.outContainer .inContainer .main .rightInContainer .plus_e button {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  font-size: large;
-}
-
-.outContainer .inContainer .btn {
+.outContainer .event_registration .eventRegForm .btn {
   padding: 0.5rem;
   background-color: #0093D4;
   color: white;
   border-radius: 10px;
-  margin-bottom: 10px;
-  font-size: 15px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 100px;
+  font-size: large;
 }
 
-.outContainer .inContainer .btn:hover {
+.outContainer .event_registration .eventRegForm .btn:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   background-color: #056a95;
 }
 
-.outContainer .inContainer button:hover {
+.outContainer .event_registration .eventRegForm button:hover {
   cursor: pointer;
 }
 
-.outContainer .inContainer button:focus {
+.outContainer .event_registration .eventRegForm button:focus {
   outline: none;
+}
+
+@media (max-width: 700px) {
+  .event_registration h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .event_registration .eventRegForm .fl {
+    width: 280px;
+  }
 }
 /*# sourceMappingURL=eventReg.css.map */
