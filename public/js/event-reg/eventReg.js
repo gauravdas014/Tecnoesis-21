@@ -80,7 +80,8 @@ const modules = [
         moduleName: "Robotics",
         events: [
             {
-                eventName: "Hackathon"
+                eventName: "Hackathon",
+                teamBased: true
             }
         ]
     }
@@ -88,16 +89,23 @@ const modules = [
 
 var moduleDropdown = document.querySelector('#moduleName');
 var eventDropdown = document.querySelector('#eventName');
+var individualBlock = document.querySelector('.indivisual');
+var teamBlock = document.querySelector('.team_event');
 
 
-moduleDropdown.addEventListener('change', searchModule);
-searchModule.call(moduleDropdown);
+moduleDropdown.addEventListener('change', searchForModule);
+searchForModule.call(moduleDropdown);
 
-function searchModule(){
-    var selectedModule = this.value;
+function searchForParticluarModule(selectedModule){
     var requiredModule = modules.find( mod => {
         return mod.moduleName === selectedModule;
     })
+    return requiredModule;
+}
+
+function searchForModule(){
+    var selectedModule = this.value;
+    var requiredModule = searchForParticluarModule(selectedModule)
     populateEvents(requiredModule);
 }
 
@@ -107,4 +115,24 @@ function populateEvents (requiredModule){
         options += `<option value="${eve.eventName}">${eve.eventName}</option>`
     })
     eventDropdown.innerHTML = options;
+    memberNumberChange.call(eventDropdown);
+}
+
+eventDropdown.addEventListener('change', memberNumberChange);
+
+function memberNumberChange(){
+    var selectedEventName = this.value;
+    var selectedModuleName = moduleDropdown.value;
+    var requiredModule = searchForParticluarModule(selectedModuleName);
+    var requiredEvent = requiredModule.events.find(mod => {
+        return selectedEventName === mod.eventName
+    })
+    if( !requiredEvent.teamBased ){
+        individualBlock.style.display = 'block';
+        teamBlock.style.display = 'none';
+    }
+    else{
+        individualBlock.style.display = 'none';
+        teamBlock.style.display = 'block';
+    }
 }
