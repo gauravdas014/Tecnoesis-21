@@ -7,8 +7,8 @@
     <title>Cyberwarp | Tecnoesis</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../imgages/icon.png">
-    <link rel="stylesheet" href="../css/modules/cyberwarp/style.css">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="stylesheet" href="../css/modules/robotron/style.css">
     <link rel="stylesheet" href="../css/modules/bootstrap.min.css">
     <link rel="stylesheet" href="../css/modules/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -114,6 +114,9 @@
             }
 
         }
+        .logo, .mini-logo{
+            cursor : pointer
+        }
     </style>
 </head>
 
@@ -126,17 +129,16 @@
     </div> -->
 
     <nav>
-        <div class="logo">
-            <img src="../images/logo.png" alt="" style="margin-top:-6%;">
-
+        <div class="logo" onclick="directToHome()">
+            <img src="../images/modules/logo.png" alt="" style="margin-top:-6%;">
         </div>
-        <div class="mini-logo">
-            <img src="../images/logo.png" alt="" style="margin-top:-44%;height: 80px;">
+        <div class="mini-logo" onclick="directToHome()">
+            <img src="../images/modules/mini-logo.png" alt="">
         </div>
         <ul>
-            <li><a href="#1"><i class="fa fa-css3"></i> <em>Data Strata</em></a></li>
+            <li><a href="#1"><i class="fa fa-database"></i> <em>Data Strata</em></a></li>
             <li><a href="#2"><i class="fa fa-code"></i> <em>Cyberbot</em></a></li>
-            <li><a href="#3"><i class="fa fa-code-fork"></i> <em>Nibble Code 3.0</em></a></li>
+            <li><a href="#3"><i class="fa fa-code"></i> <em>Nibble Code 3.0</em></a></li>
             <li><a href="#4"><i class="fa fa-database"></i> <em>Pixelate 2021</em></a></li>
             <!-- <li><a href="#6"><i class="fa fa-image"></i> <em>Roboart</em></a></li> -->
         </ul>
@@ -162,15 +164,9 @@
                                                 <h2>DATA STRATA</h2>
                                                 <p
                                                     style="font-size:1.2rem;text-align:justify;font-family: Electrolize;">
-                                                    Data Science is the hottest and one of the highest paying fields of
-                                                    the 21st century. It is
-                                                    extensively used in every domain, whether it be technology,
-                                                    medicine, business, applied science etc.
-                                                    Data Strata is an exclusive event for all the budding data
-                                                    scientists organised under the
-                                                    banner of Tecnoesis 2020. The participants have to go through an
-                                                    online quiz as stated in the rules and then, they will do hands-on
-                                                    data analysis on a given real world dataset
+                                                    Data Science is the hottest and one of the highest paying fields of the 21st century. It is extensively used in every domain, whether it be technology, medicine, business,
+applied science etc. Data Strata is an exclusive event for all the budding data scientists organised under the banner of Tecnoesis 2020. The participants have to go through an online quiz as stated in the rules and then, they will do hands-on data analysis on a given real world dataset .
+
                                                 </p>
                                                 <!--  <div class="main-btn"><a href="#4">Continue Reading</a></div> -->
                                             </div>
@@ -187,7 +183,7 @@
                                                     <br class="mobile-break">( <i class="fa fa-phone"></i> <i
                                                         class="fa fa-long-arrow-right" aria-hidden="true"></i>
                                                     +91-9336107600)<br>
-                                                <div class="main-btn1"><a href="./Data Strata.pdf"
+                                                <div class="main-btn1"><a href="../pdf/data-strata.pdf"
                                                         target="_blank">Download Details</a></div>
                                                 </p>
 
@@ -232,9 +228,10 @@
                                             <div class="left-content">
                                                 <h2>Cyberbot</h2>
                                                 <p style="font-size:1.1rem;text-align:justify;font-family:Electrolize">
-                                                    Cyberbot gives you the perfect opportunity to start and finish the
-                                                    first step in your web development journey in 2 days, and test out
-                                                    your knowledge for a cash prize immediately after</p>  
+                                                    Cyberbot gives you the perfect opportunity to start and finish
+the first step in your web development journey in 2 days, and test out your knowledge for a cash prize immediately after. A 2 day workshop will be held that teaches you all the basics required to make a website and host it on git. No prerequisites required. CSS, HTML, JS, and Git are things that help you no matter what you want to develop, whether it be a site in React, an android app, or a backend REST API. The final contest requires you to submit a robot themed website
+that will be judged on basis on functionality, creativity, and code readability.
+</p>  
                                             </div>
                                         </div>
                                         <div class="col-md-1"></div>
@@ -245,8 +242,17 @@
                                                 <br class="mobile-break">( <i class="fa fa-phone"></i> <i
                                                     class="fa fa-long-arrow-right" aria-hidden="true"></i>80088 02774
                                                 )<br>
-
-                                            <div class="main-btn1"><a href="./cyberbot.pdf" target="_blank">Download
+                                            <p style="font-size:1.1rem;">
+                                                Soumya Ranjan Mohapatro
+                                                <br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                    class="fa fa-long-arrow-right" aria-hidden="true"></i>94396 53530
+                                                )<br>
+                                            <p style="font-size:1.1rem;">
+                                                Bhargab Nath
+                                                <br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                    class="fa fa-long-arrow-right" aria-hidden="true"></i>93656 98129
+                                                )<br>
+                                            <div class="main-btn1"><a href="../pdf/cyberbot.pdf" target="_blank">Download
                                                     Details</a></div>
                                             </p>
 
@@ -306,14 +312,10 @@
                                             <div class="left-content">
                                                 <h2>Nibble Code 3.0</h2>
                                                 <p style="font-size:1.1rem;text-align:justify;font-family:Electrolize">
-                                                    Introducing you to the realm of competitive coding, we present
-                                                    Nibble Code 3.0! Exclusively for freshmen, the contest will be much
-                                                    of a fun game which will have you scratch your heads over simple but
-                                                    tricky problem statements for 3 short hours of the day.<br>
-                                                    To familiarize the enthusiasts with the competing environment, a one
-                                                    day workshop will be organized prior to the contest which will
-                                                    provide them with ample knowledge such that they can play well and
-                                                    battle amongst themselves for a better leaderboard position</p>
+                                                    Introducing you to the realm of competitive coding, we
+present Nibble Code! Exclusively for freshmen, the contest
+will be much of a fun game which will have you scratch your heads over simple but tricky problem statements.
+</p>
                                                 <!-- <div class="main-btn1"><a href="#4">Continue Reading</a></div>
  -->
                                             </div>
@@ -326,7 +328,21 @@
                                                     Rishu Kumar<br class="mobile-break">( <i class="fa fa-phone"></i> <i
                                                         class="fa fa-long-arrow-right" aria-hidden="true"></i>
                                                     7678634716)<br>
-                                                <div class="main-btn1"><a href="./Nibble Code.pdf"
+                                                <p style="font-size:1.1rem;">
+                                                    Biley Roy<br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                        class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                    6002218571)<br>
+                                                <p style="font-size:1.1rem;">
+                                                    Abhinab Saha<br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                        class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                        7002144980)<br>
+                                                <p style="font-size:1.1rem;">
+                                                    Debadipto Biswas<br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                        class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                        9476836468)<br>
+                                    
+
+                                                <div class="main-btn1"><a href="../pdf/nibble-code.pdf"
                                                         target="_blank">Download Details</a></div>
                                                 </p>
                                             </div>
@@ -374,14 +390,14 @@
                                                 <h2>Pixelate 2021</h2>
                                                 <p
                                                     style="font-size:1.2rem;text-align:justify;font-family: Electrolize;">
-                                                    Pixelate’21 is aimed at bringing enthusiastic and professional
-                                                    photographers of the country, on a common platform to showcase their
-                                                    best clicks. Pixelate has three themes under which entries to this
-                                                    grand competition are invited.This year, the themes are:
-                                                    Post-Pandemic World, Portrait, and Food. The winners are awarded
-                                                    with cash-prizes and goodies, and all the entries are featured on
-                                                    the Official Facebook page of Obiettivo, Photography Club, NIT
-                                                    Silchar.
+                                                    Pixelate 2021, under Tecnoesis is the most interesting, exciting and the largest photography contest in the north
+eastern part of the country. It is organised in association with Obeittivo, Photography Club, National Institute of Technology Silchar. Pixelate’21 is aimed at bringing enthusiastic and
+professional photographers of the country, on a common platform to showcase their best clicks. Pixelate has three
+themes under which entries to this grand competition are
+invited. This year, the themes are: Post-Pandemic World,
+Portrait, and Food. All the entries are featured on the Official
+Facebook page of Obiettivo, Photography Club, NIT Silchar.
+
 
                                                 </p>
                                                 <!--  <div class="main-btn"><a href="#4">Continue Reading</a></div> -->
@@ -395,9 +411,11 @@
                                                     Mohit Singh <br class="mobile-break">( <i class="fa fa-phone"></i>
                                                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                                                     8521932226)<br>
-
-
-                                                <div class="main-btn1"><a href="./CYBER HUNT.pdf"
+                                                <p style="font-size:1.1rem;">
+                                                    Gulshan Kumar <br class="mobile-break">( <i class="fa fa-phone"></i>
+                                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                    95595 08568)<br>
+                                                <div class="main-btn1"><a href="../pdf/pixelate.pdf"
                                                         target="_blank">Download Details</a></div>
                                                 </p>
 
@@ -488,13 +506,12 @@
             };
         }
 
-        //preloader
-
-        function stopLoader() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("loaderCircle").style.display = "none";
+    </script>
+    <script>
+        const directToHome = ()=>{
+            window.location.href = "/";
+            return;
         }
-
     </script>
 </body>
 

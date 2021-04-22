@@ -18,18 +18,15 @@ const userSchema = new Schema(
         password: {
             type: String,
         },
-        registeredEvents:[{
-            eventName:{
-                type:String
+        registeredEvents: [
+            {
+                type: Object,
             },
-            eventTiming:{
-                type:String
-            }
-        }],
+        ],
         passwordResetToken: String,
 
         resetTokenExpire: {
-            type: Date
+            type: Date,
         },
     },
     {
