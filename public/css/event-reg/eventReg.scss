@@ -61,6 +61,29 @@ select,option{
         padding:2rem;
         margin-bottom:10vh;
 
+        .topRight{
+            position: absolute;
+            top:3%;
+            right:3%;
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+
+            span{
+                padding:0.5rem;
+                font-size: large;
+            }
+
+            .btn{
+                padding:0.5rem;
+                background-color: #000000;
+                color: rgb(255, 255, 255);
+                border-radius: 10px;
+                width:100px;
+                font-size: large;
+            }
+        }
+
         .heading{
             height:20vh;
             width:100%;
@@ -158,11 +181,35 @@ select,option{
             left:0vw;
             margin-bottom:0;
 
+            .topRight{
+                position: absolute;
+                top:10%;
+                right:3%;
+                width:100%;
+                display: flex;
+                justify-content: space-around;
+    
+                span{
+                    padding:0.5rem;
+                    font-size: large;
+                }
+    
+                .btn{
+                    padding:0.5rem;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    border-radius: 10px;
+                    width:100px;
+                    font-size: large;
+                }
+            }
+
             .head{
                 font-size:25px;
                 color:rgb(10, 55, 92);
                 white-space: nowrap;
-                margin-left:60%; 
+                margin-left:65%;
+                margin-top: 10%; 
             }
         
             .eventRegForm{

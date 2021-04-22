@@ -21,6 +21,13 @@
 
             <h2 class="head" style="white-space: nowrap;">Event Registration</h2>
 
+            <div class='topRight'>
+                <span><%= userName %></span>
+                <button class="btn">
+                    <a href='/user/logout' style="text-decoration: none;color:white">Sign Out</a>
+                </button>
+            </div>
+
 
             <form class='eventRegForm' action="/eventRegister" method="POST">
                 <div class='module fl'>
