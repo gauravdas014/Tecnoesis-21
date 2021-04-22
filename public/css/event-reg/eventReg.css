@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input {
+  height: 30px;
+  padding: 0.5rem 0.3rem;
+  border: none;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.274);
+}
+
+input:focus, select:focus {
+  outline: none;
+}
+
+select, option {
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.274);
+}
+
+.outContainer {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("../../images/Trial BG-01.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.outContainer .event_registration {
+  background-color: white;
+  position: relative;
+  min-height: 90vh;
+  width: 60vw;
+  top: 5vh;
+  left: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 10vh;
+}
+
+.outContainer .event_registration .heading {
+  height: 20vh;
+  width: 100%;
+}
+
+.outContainer .event_registration .heading .img {
+  height: 55px;
+}
+
+.outContainer .event_registration .heading .img img {
+  height: 90%;
+}
+
+.outContainer .event_registration .head {
+  font-size: 40px;
+  color: #0a375c;
+  margin-left: 50%;
+  margin-top: -8%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.outContainer .event_registration .eventRegForm {
+  min-height: 90vh;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.outContainer .event_registration .eventRegForm .plus_e {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.outContainer .event_registration .eventRegForm .plus_e label {
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: large;
+}
+
+.outContainer .event_registration .eventRegForm .plus_e button {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: large;
+}
+
+.outContainer .event_registration .eventRegForm .fl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 10vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40vw;
+  margin-top: 2%;
+}
+
+.outContainer .event_registration .eventRegForm .team_event {
+  margin-top: 2rem;
+}
+
+.outContainer .event_registration .eventRegForm .btn {
+  padding: 0.5rem;
+  background-color: #0093D4;
+  color: white;
+  border-radius: 10px;
+  margin-top: 5vh;
+  width: 100px;
+  font-size: large;
+}
+
+.outContainer .event_registration .eventRegForm .btn:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  background-color: #056a95;
+}
+
+.outContainer .event_registration .eventRegForm button:hover {
+  cursor: pointer;
+}
+
+.outContainer .event_registration .eventRegForm button:focus {
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  .outContainer {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgba(8, 165, 238, 0.76);
+  }
+  .outContainer .event_registration {
+    min-height: 100vh;
+    width: 100vw;
+    top: 0vh;
+    left: 0vw;
+    margin-bottom: 0;
+  }
+  .outContainer .event_registration .head {
+    font-size: 25px;
+    color: #0a375c;
+    white-space: nowrap;
+    margin-left: 60%;
+  }
+  .outContainer .event_registration .eventRegForm {
+    min-height: 90vh;
+    width: 80vw;
+    margin-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .outContainer .event_registration .eventRegForm .plus_e {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  .outContainer .event_registration .eventRegForm .plus_e label {
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: large;
+  }
+  .outContainer .event_registration .eventRegForm .plus_e button {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: large;
+  }
+  .outContainer .event_registration .eventRegForm .fl {
+    width: 280px;
+  }
+  .outContainer .event_registration .eventRegForm .team_event {
+    margin-top: 2rem;
+  }
+  .outContainer .event_registration .eventRegForm .btn {
+    padding: 0.5rem;
+    background-color: #0093D4;
+    color: white;
+    border-radius: 10px;
+    margin-top: 5vh;
+    width: 100px;
+    font-size: large;
+  }
+}
+/*# sourceMappingURL=eventReg.css.map */
