@@ -4,11 +4,73 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.event_registration {
-  min-height: 100vh;
+input {
+  height: 30px;
+  padding: 0.5rem 0.3rem;
+  border: none;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.274);
+  font-size: medium;
+}
+
+input:focus {
+  outline: none;
+}
+
+.outContainer {
+  height: 100vh;
   width: 100vw;
+  background-color: rgba(8, 165, 238, 0.76);
+}
+
+.outContainer .inContainer {
+  height: 90vh;
+  width: 90vw;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  background-color: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.outContainer .inContainer .head {
+  height: 10%;
+  padding: 1rem;
+  font-size: 1.9rem;
+}
+
+.outContainer .inContainer .main {
+  height: 80%;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.outContainer .inContainer .main .leftInContainer, .outContainer .inContainer .main .rightInContainer {
+  height: 100%;
+  width: 50%;
+  top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,42 +85,7 @@
           align-items: center;
 }
 
-.event_registration .eventRegForm {
-  min-height: 90vh;
-  width: 80vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.event_registration .eventRegForm .plus_e {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-
-.event_registration .eventRegForm .plus_e label {
-  margin-right: 10px;
-  font-weight: 600;
-  font-size: large;
-}
-
-.event_registration .eventRegForm .plus_e button {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  font-size: large;
-}
-
-.event_registration .eventRegForm .fl {
+.outContainer .inContainer .main .leftInContainer .fl, .outContainer .inContainer .main .rightInContainer .fl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,34 +99,80 @@
   width: 40vw;
 }
 
-.event_registration .eventRegForm .fl input {
-  height: 30px;
-  padding: 0.5rem 0.3rem;
-}
-
-.event_registration .eventRegForm .fl select, .event_registration .eventRegForm .fl option {
+.outContainer .inContainer .main .leftInContainer .fl select, .outContainer .inContainer .main .leftInContainer .fl option, .outContainer .inContainer .main .rightInContainer .fl select, .outContainer .inContainer .main .rightInContainer .fl option {
   padding: 0.5rem;
 }
 
-.event_registration .eventRegForm .btn {
+.outContainer .inContainer .main .leftInContainer {
+  height: 70%;
+  margin-top: -5%;
+}
+
+.outContainer .inContainer .main .leftInContainer .team_event {
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.outContainer .inContainer .main .rightInContainer .indivisual {
+  margin-top: 5%;
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.outContainer .inContainer .main .rightInContainer .plus_e {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.outContainer .inContainer .main .rightInContainer .plus_e label {
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: large;
+}
+
+.outContainer .inContainer .main .rightInContainer .plus_e button {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: large;
+}
+
+.outContainer .inContainer .btn {
   padding: 0.5rem;
   background-color: #0093D4;
   color: white;
   border-radius: 10px;
   margin-bottom: 10px;
+  font-size: 15px;
 }
 
-.event_registration .eventRegForm .btn:hover {
+.outContainer .inContainer .btn:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   background-color: #056a95;
 }
 
-.event_registration .eventRegForm button:hover {
+.outContainer .inContainer button:hover {
   cursor: pointer;
 }
 
-.event_registration .eventRegForm button:focus {
+.outContainer .inContainer button:focus {
   outline: none;
 }
 /*# sourceMappingURL=eventReg.css.map */
