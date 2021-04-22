@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+input{
+    height:30px;
+    padding:0.5rem 0.3rem;
+    border:none;
+    border-bottom:1px solid rgba(134, 134, 134, 0.274);
+}
+input:focus,select:focus{
+    outline: none;
+}
+
+select,option{
+    padding:0.5rem;
+    border:none;
+    border-bottom:1px solid rgba(134, 134, 134, 0.274);
+}
+
+.outContainer{
+    min-height:100vh;
+    width:100vw;
+    background-image:url('../../images/Trial\ BG-01.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    .event_registration{
+        background-color: white;
+        position: relative;
+        min-height:90vh;
+        width:60vw;
+        top:5vh;
+        left:20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius:20px;
+        padding:2rem;
+        margin-bottom:10vh;
+
+        .heading{
+            height:20vh;
+            width:100%;
+            
+            .img{
+                height:55px;
+
+                img{
+                    height:90%;
+                }
+            }
+        }
+
+        .head{
+            font-size:40px;
+            color:rgb(10, 55, 92);
+            margin-left:50%;
+            margin-top:-8%;
+            transform: translateX(-50%);
+        }
+    
+        .eventRegForm{
+            min-height:90vh;
+            width:80vw;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+
+            .plus_e{
+                margin-top:2vh;
+                margin-bottom:2vh;
+                label{
+                    margin-right:10px;
+                    font-weight: 600;
+                    font-size: large;
+                }
+                button{
+                    height:25px;
+                    width:25px;
+                    border-radius:50%;
+                    font-size: large;
+                }
+            }
+    
+            .fl{
+                display: flex;
+                flex-direction: column;
+                height:10vh;
+                justify-content: space-around;
+                width:40vw;
+                margin-top:2%;
+            }
+            .team_event{
+                margin-top:2rem;
+            }
+
+            .btn{
+                padding:0.5rem;
+                background-color: #0093D4;
+                color: rgb(255, 255, 255);
+                border-radius: 10px;
+                margin-top: 5vh;
+                width:100px;
+                font-size: large;
+            }
+            .btn:hover{
+            
+                transform: scale(1.01);
+                background-color: #056a95;
+            }
+            button:hover{
+               cursor: pointer;
+            }
+            button:focus{
+              outline: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+
+    .outContainer{
+        min-height:100vh;
+        width:100vw;
+        background-color: rgba(8, 165, 238, 0.76);
+    
+        .event_registration{
+            min-height:100vh;
+            width:100vw;
+            top:0vh;
+            left:0vw;
+            margin-bottom:0;
+
+            .head{
+                font-size:25px;
+                color:rgb(10, 55, 92);
+                white-space: nowrap;
+                margin-left:60%; 
+            }
+        
+            .eventRegForm{
+                min-height:90vh;
+                width:80vw;
+                margin-top:5vh;
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                position: relative;
+    
+                .plus_e{
+                    margin-top:2vh;
+                    margin-bottom:2vh;
+                    label{
+                        margin-right:10px;
+                        font-weight: 600;
+                        font-size: large;
+                    }
+                    button{
+                        height:25px;
+                        width:25px;
+                        border-radius:50%;
+                        font-size: large;
+                    }
+                }
+        
+                .fl{
+                    width:280px;
+                }
+
+                .team_event{
+                    margin-top:2rem;
+                }
+    
+                .btn{
+                    padding:0.5rem;
+                    background-color: #0093D4;
+                    color: rgb(255, 255, 255);
+                    border-radius: 10px;
+                    margin-top: 5vh;
+                    width:100px;
+                    font-size: large;
+                }
+            }
+        }
+    }
+}

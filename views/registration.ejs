@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/event-reg/eventReg.css">
+    <title>Event Registration</title>
+</head>
+<body>
+    
+    <div class='outContainer'>
+        <div class='event_registration'>
+            <div class='heading'>
+                <div class='img'>
+                    <img src='./images/tecnoesis logo 2021xxxhdpi.png'/>
+                </div>
+            </div>
+
+            <h2 class="head" >Event Registration</h2>
+
+
+            <form class='eventRegForm'>
+                <div class='module fl'>
+                    <label>Module Name</label>
+                    <select name="moduleName" id="moduleName">
+                        <option value="Empessario">Empessario</option>
+                        <option value="CyberWarp">CyberWarp</option>
+                        <option value="ASME">ASME</option>
+                        <option value="V-warz">V-warz</option>
+                        <option value="Smart City">Smart City</option>
+                        <option value="Robotics">Robotics</option>
+                      </select>
+                </div>
+        
+                <div class='events_associated fl'>
+                    <label>Event Name</label>
+                    <select name="eventName" id="eventName"></select>
+               </div>
+    
+               <div class='team_event hide'>
+                  
+                   <div class="team_name_e fl">
+                      <label>Team Name*</label>
+                      <input type='text' name='team_name' required/>
+                   </div>
+    
+                   <div class="team_leader_e fl">
+                      <label>Team Leader name (Member 1)*</label>
+                      <input type='text' name='team_leader_name' required/>
+                    </div>
+    
+                    <div class="team_leader_email_e fl">
+                        <label>Team Leader Email*</label>
+                        <input type='email' name='team_leader_email' required/>
+                    </div>
+                    
+                    <div class="team_leader_phoneNo_e fl">
+                        <label>Team Leader Phone Number*</label>
+                        <input type='Number' name='team_leader_phone_No' required/>
+                    </div>
+                        
+                    <div class="team_leader_address_e fl">
+                        <label>Team Leader Adress*</label>
+                        <input type='text' name='team_leader_address' required/>
+                    </div>
+    
+                    <div class="team_members" >
+
+                    </div>
+               </div>
+    
+               <div class="indivisual">
+    
+                  <div class="name_e fl">
+                      <label>Name*</label>
+                      <input type='text' name='name' required/>
+                   </div>
+                
+                   <div class="email_e fl">
+                      <label>Email*</label>
+                      <input type='email' name='email' required/>
+                    </div>
+                
+                   <div class="phoneNo_e fl">
+                      <label>Phone Number*</label>
+                      <input type='Number' name='phone_No' required/>
+                   </div>
+                   
+                   <div class="address_e fl">
+                      <label>Adress</label>
+                      <input type='text' name='address'/>
+                    </div>
+    
+               </div>
+    
+               
+    
+               <button type="submit" class="btn">Register</button>
+            
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/event-reg/eventReg.js"></script>
+</body>
+</html>
