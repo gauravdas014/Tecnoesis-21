@@ -69,6 +69,32 @@ select, option {
   margin-bottom: 10vh;
 }
 
+.outContainer .event_registration .topRight {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.outContainer .event_registration .topRight span {
+  padding: 0.5rem;
+  font-size: large;
+}
+
+.outContainer .event_registration .topRight .btn {
+  padding: 0.5rem;
+  background-color: #000000;
+  color: white;
+  border-radius: 10px;
+  width: 100px;
+  font-size: large;
+}
+
 .outContainer .event_registration .heading {
   height: 20vh;
   width: 100%;
@@ -182,11 +208,35 @@ select, option {
     left: 0vw;
     margin-bottom: 0;
   }
+  .outContainer .event_registration .topRight {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .outContainer .event_registration .topRight span {
+    padding: 0.5rem;
+    font-size: large;
+  }
+  .outContainer .event_registration .topRight .btn {
+    padding: 0.5rem;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    font-size: large;
+  }
   .outContainer .event_registration .head {
     font-size: 25px;
     color: #0a375c;
     white-space: nowrap;
-    margin-left: 60%;
+    margin-left: 65%;
+    margin-top: 10%;
   }
   .outContainer .event_registration .eventRegForm {
     min-height: 90vh;
