@@ -5,6 +5,7 @@ const path = require('path')
 const userRoutes = require('./user')
 const hacksRoutes = require('./hacks')
 const modulesRoutes = require('./modules')
+const eventRegisterRoute = require('./eventRegister');
 const tecnoContactFormRoute = require('./tecnoContactForm')
 
 router.get('/', (req, res) => {
@@ -16,5 +17,6 @@ router.use('/', tecnoContactFormRoute)
 router.use('/user', userRoutes)
 router.use('/hacks', hacksRoutes)
 router.use('/modules', modulesRoutes)
+router.use('/eventRegister',eventRegisterRoute);
 
 module.exports = router

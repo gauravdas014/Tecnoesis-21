@@ -16,7 +16,7 @@ body .solar_systm .planet, body input[type=radio][name=planet]::after, body .ove
   right: 0;
   top: 30%;
   transform: translateY(-50%);
-  margin-left: 10%;
+  margin-left: 13%;
 }
 
 body .solar_systm .planet.neptune .trajectory.ner, body .solar_systm .planet.neptune .trajectory.pro, body .solar_systm .planet.neptune .trajectory.tri, body .solar_systm .planet.uranus .trajectory.umb, body .solar_systm .planet.uranus .trajectory.ari, body .solar_systm .planet.uranus .trajectory.mir, body .solar_systm .planet.saturn .trajectory.enc, body .solar_systm .planet.saturn .trajectory.di, body .solar_systm .planet.saturn .trajectory.ti, body .solar_systm .planet.jupiter .trajectory.ga, body .solar_systm .planet.jupiter .trajectory.eu, body .solar_systm .planet.jupiter .trajectory.lop, body .solar_systm .planet.mars .trajectory.p, body .solar_systm .planet.mars .trajectory.d, body .solar_systm .planet.earth .trajectory.m {
@@ -107,7 +107,7 @@ body input[type=radio][name=planet]::after {
   outline: none;
   cursor: pointer;
   z-index: 12;
-  left: 20%;
+  left: 23%;
   bottom: 282px;
 }
 
@@ -166,7 +166,7 @@ body label.pluto > .preview {
   background: url("https://pre00.deviantart.net/4677/th/pre/f/2015/314/4/e/pluto_map__2015_nov_10__by_snowfall_the_cat-d918tlb.png") !important;
 }
 body label.menu {
-  color: black;
+  color: white;
   display: block;
   position: absolute;
   cursor: pointer;
@@ -187,6 +187,7 @@ body label.menu:after {
 }
 body label.menu:hover h2, body label.menu:hover h3 {
   opacity: 1;
+  font-size: 27px;
 }
 body label.menu.mercury h2 .pip {
   background: #E8927C;
@@ -248,7 +249,7 @@ body label.menu h2 .pip {
   background: #fea082;
   float: left;
   position: relative;
-  top: 3px;
+  top: 8px;
   transition: all 0.3s;
   margin-right: 0px;
 }
@@ -1996,7 +1997,7 @@ body .solar_systm .planet.uranus .umbriel {
   box-shadow: 0px -30px 30px 10px black inset;
 }
 body .solar_systm .planet.neptune {
-  background: url("/images/modules/vwarz.png");
+  background: url("/images/modules/conferenza.png");
   background-repeat: no-repeat;
 
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px rgba(234, 205, 199, 0.6) inset, 0 0px 23px 4px rgba(234, 205, 199, 0.6) inset, 0 -10px 130px #2d4153; */
@@ -2047,7 +2048,7 @@ body .solar_systm .planet.neptune .nereid {
   box-shadow: 0px -30px 30px 10px black inset;
 }
 body .solar_systm .planet.pluto {
-  background: url("/images/modules/nits-hacks.png");
+  background: url("/images/modules/asedf.png");
   background-repeat: no-repeat;
 
   /* box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px rgba(234, 205, 199, 0.6) inset, 0 0px 23px 4px rgba(234, 205, 199, 0.6) inset, 0 -10px 130px #2d4153; */
@@ -2156,13 +2157,14 @@ body .solar_systm .planet_description p {
 }
 body .solar_systm .planet_description a {
   color: #fea082;
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 700;
   padding: 0 2px 5px 0px;
   border-bottom: 2px solid;
   transition: all 0.2s;
   position: relative;
   left: 0;
+  text-decoration: none;
 }
 body .solar_systm .planet_description a:hover {
   padding: 0 10px 5px 10px;
