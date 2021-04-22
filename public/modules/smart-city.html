@@ -113,6 +113,9 @@
                 display: none;
             }
         }
+        .logo, .mini-logo{
+            cursor : pointer
+        }
     </style>
 </head>
 
@@ -125,12 +128,11 @@
     </div> -->
 
     <nav>
-        <div class="logo">
-            <img src="../images/logo.png" alt="" style="margin-top:-6%;">
-
+        <div class="logo" onclick="directToHome()">
+            <img src="../images/modules/logo.png" alt="" style="margin-top:-6%;">
         </div>
-        <div class="mini-logo">
-            <img src="../images/logo.png" alt="" style="margin-top:-44%;height: 80px;">
+        <div class="mini-logo" onclick="directToHome()">
+            <img src="../images/modules/mini-logo.png" alt="">
         </div>
         <ul>
             <li><a href="#1"><i class="fa fa-bolt"></i> <em>My City My Dream</em></a></li>
@@ -161,17 +163,9 @@
                                             <div class="left-content">
                                                 <h2>My City My Dream</h2>
                                                 <p style="font-size:1.1rem;text-align:justify;font-family:Electrolize">
-                                                    With current in the veins
-                                                    and blood in wires, be ready to witness sparks fly, as metal crushes
-                                                    metal in the most glorious of battles. Brace yourselves to be part
-                                                    of
-                                                    one of the most exciting
-                                                    tournaments, "<span
-                                                        style="color:#00d2ff;font-family: Electrolize;">ROBOWAR</span>",
-                                                    held under the Robotron Module of Tecnoesis.
-                                                    <br><span style="font-family: Electrolize;">IT'S BIGGER, BETTER AND
-                                                        IT'S BACK.
-                                                        LET THE WAR BEGIN.</span>
+                                                   Smart Cities focus on their most pressing needs and on the greatest opportunities to improve lives. They tap a range of approaches – digital and information technologies, urban planning best practices, public-private partnerships, and policy change - to make a difference. They always put people first. The objective of the event "My City My Dream" is to promote cities that provide core infrastructure and give a decent quality of life to its citizens “keeping in view of the Post Pandemic World”, a clean and sustainable environment
+and application of 'Smart' Solutions. The focus is on sustainable and inclusive development and the idea is to look at compact areas, create a replicable model which will act like a lighthouse to other aspiring cities.
+</span>
                                                 </p>
                                                 <!-- <div class="main-btn1"><a href="#4">Continue Reading</a></div>-->
                                             </div>
@@ -183,7 +177,19 @@
                                                 Sai Lahari <br class="mobile-break">( <i class="fa fa-phone"></i> <i
                                                     class="fa fa-long-arrow-right" aria-hidden="true"></i>
                                                 9014151401)<br />
-                                            <div class="main-btn1"><a href="./robowar event detail.pdf"
+                                            <p style="font-size:1.1rem;">
+                                                Nabanit Das <br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                    class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                  6003583480)<br />
+                                            <p style="font-size:1.1rem;">
+                                                Bhishma Patle <br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                    class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                9552868998)<br />
+                                            <p style="font-size:1.1rem;">
+                                                Diksha Kakati <br class="mobile-break">( <i class="fa fa-phone"></i> <i
+                                                    class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                                8473080966)<br />
+                                            <div class="main-btn1"><a href="../pdf/my-city-my-dreams.pdf"
                                                     target="_blank">Download
                                                     Details</a></div>
                                             </p>
@@ -279,11 +285,12 @@
 
             //preloader
 
-            function stopLoader() {
-                document.getElementById("loader").style.display = "none";
-                document.getElementById("loaderCircle").style.display = "none";
+        </script>
+        <script>
+            const directToHome = ()=>{
+                window.location.href = "/";
+                return;
             }
-
         </script>
 </body>
 
