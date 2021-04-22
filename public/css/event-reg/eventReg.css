@@ -14,12 +14,14 @@ input {
   border-bottom: 1px solid rgba(134, 134, 134, 0.274);
 }
 
-input:focus {
+input:focus, select:focus {
   outline: none;
 }
 
 select, option {
   padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.274);
 }
 
 .outContainer {
@@ -55,9 +57,26 @@ select, option {
   margin-bottom: 10vh;
 }
 
+.outContainer .event_registration .heading {
+  height: 20vh;
+  width: 100%;
+}
+
+.outContainer .event_registration .heading .img {
+  height: 55px;
+}
+
+.outContainer .event_registration .heading .img img {
+  height: 90%;
+}
+
 .outContainer .event_registration .head {
   font-size: 40px;
   color: #0a375c;
+  margin-left: 50%;
+  margin-top: -8%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .outContainer .event_registration .eventRegForm {
@@ -153,11 +172,10 @@ select, option {
     margin-bottom: 0;
   }
   .outContainer .event_registration .head {
-    font-size: 30px;
+    font-size: 25px;
     color: #0a375c;
     white-space: nowrap;
-    -webkit-transform: translateX(10%);
-            transform: translateX(10%);
+    margin-left: 60%;
   }
   .outContainer .event_registration .eventRegForm {
     min-height: 90vh;
