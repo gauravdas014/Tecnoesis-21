@@ -35,7 +35,9 @@ const modules = [
             },
             {
                 eventName: "Cyberbot",
-                teamBased: false
+                teamBased: true,
+                minm: 1,
+                maxm: 3
             }
         ]
     },
