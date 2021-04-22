@@ -35,9 +35,7 @@ const modules = [
             },
             {
                 eventName: "Cyberbot",
-                teamBased: true,
-                minm: 1,
-                maxm: 4
+                teamBased: false
             }
         ]
     },
@@ -56,9 +54,7 @@ const modules = [
             },
             {
                 eventName: "Draft Ritz 4.0",
-                teamBased: true,
-                minm: 1,
-                maxm: 4
+                teamBased: false
             },
             {
                 eventName: "Pitch the car",
@@ -75,7 +71,7 @@ const modules = [
                 eventName: "Call of Duty Mobile",
                 teamBased: true,    
                 minm: 1,
-                maxm: 4            
+                maxm: 5           
             },
             {
                 eventName: "Minmi-Militia",
@@ -100,10 +96,10 @@ const modules = [
         moduleName: "Robotics",
         events: [
             {
-                eventName: "Hackathon",
+                eventName: "Robo Mania",
                 teamBased: true,
                 minm: 1,
-                maxm: 4
+                maxm: 3
             }
         ]
     }
