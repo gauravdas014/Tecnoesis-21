@@ -5,10 +5,14 @@ const modules = [
             {
                 eventName: "Pitch Please",
                 teamBased: true,
+                minm: 2,
+                maxm: 4
             },
             {
                 eventName: "Ad-ovation",
-                teamBased: true
+                teamBased: true,
+                minm: 1,
+                maxm: 4
             }
         ]
     },
@@ -26,10 +30,14 @@ const modules = [
             {
                 eventName: "Data Strata",
                 teamBased: true,
+                minm: 1,
+                maxm: 4
             },
             {
                 eventName: "Cyberbot",
                 teamBased: true,
+                minm: 1,
+                maxm: 4
             }
         ]
     },
@@ -43,14 +51,20 @@ const modules = [
             {
                 eventName: "Mascot Making",
                 teamBased: true,
+                minm: 1,
+                maxm: 4
             },
             {
                 eventName: "Draft Ritz 4.0",
                 teamBased: true,
+                minm: 1,
+                maxm: 4
             },
             {
                 eventName: "Pitch the car",
                 teamBased: true,
+                minm: 1,
+                maxm: 4
             }
         ]
     },
@@ -59,11 +73,15 @@ const modules = [
         events: [
             {
                 eventName: "Call of Duty Mobile",
-                teamBased: true,                
+                teamBased: true,    
+                minm: 1,
+                maxm: 4            
             },
             {
-                eventName: "Mini-Militia",
-                teamBased: true
+                eventName: "Minmi-Militia",
+                teamBased: true,
+                minm: 1,
+                maxm: 4
             }
         ]
     },
@@ -72,7 +90,9 @@ const modules = [
         events: [
             {
                 eventName: "My City My Dream",
-                teamBased: true
+                teamBased: true,
+                minm: 1,
+                maxm: 4
             }
         ]
     },
@@ -81,7 +101,9 @@ const modules = [
         events: [
             {
                 eventName: "Hackathon",
-                teamBased: true
+                teamBased: true,
+                minm: 1,
+                maxm: 4
             }
         ]
     }
@@ -130,9 +152,31 @@ function memberNumberChange(){
     if( !requiredEvent.teamBased ){
         individualBlock.style.display = 'block';
         teamBlock.style.display = 'none';
+        
     }
     else{
         individualBlock.style.display = 'none';
         teamBlock.style.display = 'block';
+        var count = 2;
+        var extraMem = "";
+        while(count <= requiredEvent.minm){
+            var requiredMemberString = 
+            `<div class="team_member fl">
+                <label>Team Member Name (Member - ${count})*</label>
+                <input type='text' name='team_member_name_${count}' placeholder="Team Member Name" required/>
+            </div>`;
+            extraMem+= requiredMemberString;
+            count++;
+        }
+        while(count <= requiredEvent.maxm){
+            var memeberString = 
+            `<div class="team_member fl">
+            <label>Team Member Name (Member - ${count})</label>
+            <input type='text' name='team_member_name_${count}' placeholder="Team Member Name"/>
+            </div>`;
+            extraMem+= memeberString;
+            count++;
+        }
     }
+    console.log(extraMem);
 }
