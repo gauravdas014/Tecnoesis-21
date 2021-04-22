@@ -4,11 +4,37 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.event_registration {
+input {
+  height: 30px;
+  padding: 0.5rem 0.3rem;
+  border: none;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.274);
+}
+
+input:focus {
+  outline: none;
+}
+
+select, option {
+  padding: 0.5rem;
+}
+
+.outContainer {
   min-height: 100vh;
   width: 100vw;
+  background-color: rgba(8, 165, 238, 0.76);
+}
+
+.outContainer .event_registration {
+  background-color: white;
+  position: relative;
+  min-height: 90vh;
+  width: 60vw;
+  top: 5vh;
+  left: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,9 +47,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 10vh;
 }
 
-.event_registration .eventRegForm {
+.outContainer .event_registration .head {
+  font-size: 40px;
+  color: #0a375c;
+}
+
+.outContainer .event_registration .eventRegForm {
   min-height: 90vh;
   width: 80vw;
   display: -webkit-box;
@@ -38,27 +72,28 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
-.event_registration .eventRegForm .plus_e {
+.outContainer .event_registration .eventRegForm .plus_e {
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
 
-.event_registration .eventRegForm .plus_e label {
+.outContainer .event_registration .eventRegForm .plus_e label {
   margin-right: 10px;
   font-weight: 600;
   font-size: large;
 }
 
-.event_registration .eventRegForm .plus_e button {
+.outContainer .event_registration .eventRegForm .plus_e button {
   height: 25px;
   width: 25px;
   border-radius: 50%;
   font-size: large;
 }
 
-.event_registration .eventRegForm .fl {
+.outContainer .event_registration .eventRegForm .fl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,36 +105,45 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 40vw;
+  margin-top: 2%;
 }
 
-.event_registration .eventRegForm .fl input {
-  height: 30px;
-  padding: 0.5rem 0.3rem;
+.outContainer .event_registration .eventRegForm .team_event {
+  margin-top: 2rem;
 }
 
-.event_registration .eventRegForm .fl select, .event_registration .eventRegForm .fl option {
-  padding: 0.5rem;
-}
-
-.event_registration .eventRegForm .btn {
+.outContainer .event_registration .eventRegForm .btn {
   padding: 0.5rem;
   background-color: #0093D4;
   color: white;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 100px;
+  font-size: large;
 }
 
-.event_registration .eventRegForm .btn:hover {
+.outContainer .event_registration .eventRegForm .btn:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   background-color: #056a95;
 }
 
-.event_registration .eventRegForm button:hover {
+.outContainer .event_registration .eventRegForm button:hover {
   cursor: pointer;
 }
 
-.event_registration .eventRegForm button:focus {
+.outContainer .event_registration .eventRegForm button:focus {
   outline: none;
+}
+
+@media (max-width: 700px) {
+  .event_registration h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .event_registration .eventRegForm .fl {
+    width: 280px;
+  }
 }
 /*# sourceMappingURL=eventReg.css.map */
