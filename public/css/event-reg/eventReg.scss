@@ -15,12 +15,14 @@ input{
     border:none;
     border-bottom:1px solid rgba(134, 134, 134, 0.274);
 }
-input:focus{
+input:focus,select:focus{
     outline: none;
 }
 
 select,option{
     padding:0.5rem;
+    border:none;
+    border-bottom:1px solid rgba(134, 134, 134, 0.274);
 }
 
 .outContainer{
@@ -46,9 +48,25 @@ select,option{
         padding:2rem;
         margin-bottom:10vh;
 
+        .heading{
+            height:20vh;
+            width:100%;
+            
+            .img{
+                height:55px;
+
+                img{
+                    height:90%;
+                }
+            }
+        }
+
         .head{
             font-size:40px;
             color:rgb(10, 55, 92);
+            margin-left:50%;
+            margin-top:-8%;
+            transform: translateX(-50%);
         }
     
         .eventRegForm{
@@ -127,12 +145,11 @@ select,option{
             left:0vw;
             margin-bottom:0;
 
-    
             .head{
-                font-size:30px;
+                font-size:25px;
                 color:rgb(10, 55, 92);
                 white-space: nowrap;
-                transform:translateX(10%);
+                margin-left:60%; 
             }
         
             .eventRegForm{
