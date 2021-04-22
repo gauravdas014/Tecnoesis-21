@@ -12,7 +12,7 @@
     <div class='event_registration'>
         <h2>Event Registration</h2>
         <form class='eventRegForm'>
-            <div class='module'>
+            <div class='module fl'>
                 <label>Module Name</label>
                 <select name="moduleName" id="moduleName">
                     <option value="Empessario">Empessario</option>
@@ -23,41 +23,47 @@
                     <option value="Robotics">Robotics</option>
                   </select>
             </div>
-            <div class='events_associated'>
+    
+            <div class='events_associated fl'>
                 <label>Event Name</label>
                 <select name="eventName" id="eventName"></select>
            </div>
 
            <div class='team_event hide'>
               
-               <div class="team_name_e">
+               <div class="team_name_e fl">
                   <label>Team Name</label>
-                  <input type='text' name='team_name'/>
+                  <input type='text' name='team_name' placeholder="Enter Team Name"/>
                </div>
 
-               <div class="team_leader_e">
+               <div class="team_leader_e fl">
                   <label>Team Leader</label>
-                  <input type='text' name='team_leader'/>
+                  <input type='text' name='team_leader' placeholder="Enter Team Leader"/>
                 </div>
            </div>
 
-           <div class="name_e">
-               <label>Name</label>
-               <input type='text' name='name'/>
-           </div>
-           
-           <div class="email_e">
-               <label>Email</label>
-               <input type='email' name='email'/>
-            </div>
-           
-            <div class="phoneNo_e">
-               <label>Phone Number</label>
-               <input type='Number' name='phone_No'/>
-            </div>
-           <div class="address_e">
-               <label>Adress</label>
-               <input type='text' name='address'/>
+           <div class="indivisual">
+
+              <div class="name_e fl">
+                  <label>Name</label>
+                  <input type='text' name='name' placeholder="Enter Name"/>
+               </div>
+            
+               <div class="email_e fl">
+                  <label>Email</label>
+                  <input type='email' name='email' placeholder="Enter Email"/>
+                </div>
+            
+               <div class="phoneNo_e fl">
+                  <label>Phone Number</label>
+                  <input type='Number' name='phone_No' placeholder="Enter Phone No"/>
+               </div>
+               
+               <div class="address_e fl">
+                  <label>Adress</label>
+                  <input type='text' name='address' placeholder="Enter Adress"/>
+                </div>
+
            </div>
 
            <div class='plus_e hide'>
@@ -65,7 +71,7 @@
                  <button>+</button>
            </div>
 
-           <button type="submit">Register</button>
+           <button type="submit" class="btn">Register</button>
         
         </form>
     </div>
