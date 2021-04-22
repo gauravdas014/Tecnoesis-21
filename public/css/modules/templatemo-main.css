@@ -235,8 +235,7 @@ nav a {
   	z-index: 0;
 }
 nav a.active {
-  background-color: #fff;
-  color: #232323;
+  color: white;
 }
 nav a::before {
   content: "";
@@ -282,7 +281,7 @@ nav a:hover::before {
   left: 30%;
   top: 20%;
   bottom: 10%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.5);
 }
 .content::-webkit-scrollbar {
   width: 5px;
@@ -294,25 +293,15 @@ nav a:hover::before {
     background: rgba(250, 250, 250, 0.9);
 }
 
-.slides .slide:nth-child(1) {
-  background-image: url(../../images/modules/first_bg.jpg);
-  background-size: cover;
+body{
+	background-image: url(../../images/modules/bgg2-01.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-.slides .slide:nth-child(2) {
-  background-image: url(../img/third_bg.jpg);
-  background-size: cover;
-}
-.slides .slide:nth-child(3) {
-  background-image: url(../img/first_bg.jpg);
-}
-.slides .slide:nth-child(4) {
-  background-image: url(../img/third_bg.jpg);
- }
-.slides .slide:nth-child(5) {
-  background-image: url(../img/fifth_bg.jpg);
-}
-.slides .slide:nth-child(6) {
-  background-image: url(../img/fourth_bg.jpg);
+
+.slides .slide{
+	/* background: url(../../images/modules/bgg.png); */
+	background-color: transparent;
 }
 .slides .slide img {
   width: 100%;
