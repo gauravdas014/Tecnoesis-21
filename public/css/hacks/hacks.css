@@ -1045,7 +1045,7 @@ body {
 
 .team .team_gallery {
   width: 80vw;
-  height: 380vh;
+  height: 700vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1104,9 +1104,20 @@ body {
   margin-top: -60vh;
 }
 
+.team .team_gallery-4 {
+  height: 60vh;
+  margin-top: -60vh;
+}
+
+.team .team_gallery-5 {
+  height: 60vh;
+  margin-top: -60vh;
+}
+
 .team .team_gallery-1-1, .team .team_gallery-2-2, .team .team_gallery-3-3 {
+  position: relative;
   width: 80vw;
-  height: 90%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2362,7 +2373,7 @@ body {
   }
   .team {
     width: 100vw;
-    min-height: 850vh;
+    min-height: 900vh;
   }
   .team .team_heading {
     position: absolute;
@@ -2383,7 +2394,7 @@ body {
     margin-top: 0vh;
   }
   .team .team_gallery-3 {
-    height: 240vh;
+    height: 6000vh;
     margin-top: 0vh;
   }
   .team .team_gallery-1-1 .card, .team .team_gallery-2-2 .card, .team .team_gallery-3-3 .card {
@@ -2416,6 +2427,7 @@ body {
     margin-top: -90vh;
   }
   .contact {
+    margin-top: 5rem;
     width: 100vw;
     height: 200vh;
     position: relative;
@@ -2719,10 +2731,6 @@ body {
     font-size: 1rem;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
-  }
-  #contact {
-
-    margin-top: 9rem;
   }
 }
 /*# sourceMappingURL=hacks.css.map */
