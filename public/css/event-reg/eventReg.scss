@@ -9,32 +9,45 @@
 
 }
 
+body{
+    width: 100%;
+    // position:absolute;
+    background-image:url('../../images/sef.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
 input{
-    height:30px;
-    padding:0.5rem 0.3rem;
-    border:none;
-    border-bottom:1px solid rgba(134, 134, 134, 0.274);
+    padding:0.8rem 0.5rem;
 }
 input:focus,select:focus{
     outline: none;
 }
 
-select,option{
+input,select{
+    height:35px;
     padding:0.5rem;
     border:none;
     border-bottom:1px solid rgba(134, 134, 134, 0.274);
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 5px;
+    font-weight: 400;
+    color:rgb(15, 7, 15);
+    font-size:medium;
+}
+
+select,option{
+    padding:0.5rem;
 }
 
 .outContainer{
     min-height:100vh;
     width:100vw;
-    background-image:url('../../images/Trial\ BG-01.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
 
     .event_registration{
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.747);
         position: relative;
         min-height:90vh;
         width:60vw;
@@ -102,6 +115,11 @@ select,option{
                 justify-content: space-around;
                 width:40vw;
                 margin-top:2%;
+                font-weight: 600;
+
+                label{
+                    color:purple;
+                }
             }
             .team_event{
                 margin-top:2rem;
@@ -109,17 +127,12 @@ select,option{
 
             .btn{
                 padding:0.5rem;
-                background-color: #0093D4;
+                background-color: #000000;
                 color: rgb(255, 255, 255);
                 border-radius: 10px;
                 margin-top: 5vh;
                 width:100px;
                 font-size: large;
-            }
-            .btn:hover{
-            
-                transform: scale(1.01);
-                background-color: #056a95;
             }
             button:hover{
                cursor: pointer;
@@ -136,9 +149,9 @@ select,option{
     .outContainer{
         min-height:100vh;
         width:100vw;
-        background-color: rgba(8, 165, 238, 0.76);
     
         .event_registration{
+            background-color: rgba(255, 255, 255, 0.63);
             min-height:100vh;
             width:100vw;
             top:0vh;
@@ -181,6 +194,11 @@ select,option{
         
                 .fl{
                     width:280px;
+                    margin-top:20px;
+
+                    label{
+                        margin-bottom:5px;
+                    }
                 }
 
                 .team_event{

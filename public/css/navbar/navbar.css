@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap');
+@import url(//db.onlinewebfonts.com/c/e89ef6c6a5b8dcef3a6a883d8cf7b7bf?family=Guardians);
 .menu {
   position: fixed;
   right: 15%;
@@ -90,9 +90,7 @@
           transform: translateX(calc(100% - 35%));
   width: 100vw;
   height: 100vh;
-  background-image: url('../../images/navbar/abstract-digital-grid-black-background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #1c1c1e;
   z-index: 2;
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -138,8 +136,8 @@
 }
 
 .navbar .content .nav-items .nav-item a {
-  font-size: 3rem;
-  font-family: "Open Sans";
+  font-size: 80px;
+  font-family: "Source Sans Pro";
   text-decoration: none;
   font-weight: 800;
   color: #1c1c1e;
@@ -188,18 +186,3 @@
           transform: translateY(200px);
 }
 /*# sourceMappingURL=navbar.css.map */
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .navbar{
-    -webkit-transform: translateX(calc(100% - 0%));
-          transform: translateX(calc(100% - 0%));
-  
-  }
-}
-@media only screen and (max-width: 430px) {
-  .navbar{
-    -webkit-transform: translateX(calc(100% - 0%));
-          transform: translateX(calc(100% - 0%));
-  
-  }
-}

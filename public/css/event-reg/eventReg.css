@@ -7,34 +7,46 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+body {
+  width: 100%;
+  background-image: url("../../images/sef.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
 input {
-  height: 30px;
-  padding: 0.5rem 0.3rem;
-  border: none;
-  border-bottom: 1px solid rgba(134, 134, 134, 0.274);
+  padding: 0.8rem 0.5rem;
 }
 
 input:focus, select:focus {
   outline: none;
 }
 
-select, option {
+input, select {
+  height: 35px;
   padding: 0.5rem;
   border: none;
   border-bottom: 1px solid rgba(134, 134, 134, 0.274);
+  background-color: rgba(255, 255, 255, 0.322);
+  border-radius: 5px;
+  font-weight: 400;
+  color: #0f070f;
+  font-size: medium;
+}
+
+select, option {
+  padding: 0.5rem;
 }
 
 .outContainer {
   min-height: 100vh;
   width: 100vw;
-  background-image: url("../../images/Trial BG-01.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 .outContainer .event_registration {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.747);
   position: relative;
   min-height: 90vh;
   width: 60vw;
@@ -128,6 +140,11 @@ select, option {
       justify-content: space-around;
   width: 40vw;
   margin-top: 2%;
+  font-weight: 600;
+}
+
+.outContainer .event_registration .eventRegForm .fl label {
+  color: purple;
 }
 
 .outContainer .event_registration .eventRegForm .team_event {
@@ -136,18 +153,12 @@ select, option {
 
 .outContainer .event_registration .eventRegForm .btn {
   padding: 0.5rem;
-  background-color: #0093D4;
+  background-color: #000000;
   color: white;
   border-radius: 10px;
   margin-top: 5vh;
   width: 100px;
   font-size: large;
-}
-
-.outContainer .event_registration .eventRegForm .btn:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-  background-color: #056a95;
 }
 
 .outContainer .event_registration .eventRegForm button:hover {
@@ -162,9 +173,9 @@ select, option {
   .outContainer {
     min-height: 100vh;
     width: 100vw;
-    background-color: rgba(8, 165, 238, 0.76);
   }
   .outContainer .event_registration {
+    background-color: rgba(255, 255, 255, 0.63);
     min-height: 100vh;
     width: 100vw;
     top: 0vh;
@@ -212,6 +223,10 @@ select, option {
   }
   .outContainer .event_registration .eventRegForm .fl {
     width: 280px;
+    margin-top: 20px;
+  }
+  .outContainer .event_registration .eventRegForm .fl label {
+    margin-bottom: 5px;
   }
   .outContainer .event_registration .eventRegForm .team_event {
     margin-top: 2rem;
