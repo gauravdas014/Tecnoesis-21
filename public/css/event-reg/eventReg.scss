@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+body{
+    width: 100%;
+    // position:absolute;
+    background-image:url('../../images/sef.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+input{
+    padding:0.8rem 0.5rem;
+}
+input:focus,select:focus{
+    outline: none;
+}
+
+input,select{
+    height:35px;
+    padding:0.5rem;
+    border:none;
+    border-bottom:1px solid rgba(134, 134, 134, 0.274);
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 5px;
+    font-weight: 400;
+    color:rgb(15, 7, 15);
+    font-size:medium;
+}
+
+select,option{
+    padding:0.5rem;
+}
+
+.outContainer{
+    min-height:100vh;
+    width:100vw;
+
+    .event_registration{
+        background-color: rgba(255, 255, 255, 0.747);
+        position: relative;
+        min-height:90vh;
+        width:60vw;
+        top:5vh;
+        left:20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius:20px;
+        padding:2rem;
+        margin-bottom:10vh;
+
+        .topRight{
+            position: absolute;
+            top:3%;
+            right:3%;
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+
+            span{
+                padding:0.5rem;
+                font-size: large;
+            }
+
+            .btn{
+                padding:0.5rem;
+                background-color: #000000;
+                color: rgb(255, 255, 255);
+                border-radius: 10px;
+                width:100px;
+                font-size: large;
+            }
+        }
+
+        .heading{
+            height:20vh;
+            width:100%;
+            
+            .img{
+                height:55px;
+
+                img{
+                    height:90%;
+                }
+            }
+        }
+
+        .head{
+            font-size:40px;
+            color:rgb(10, 55, 92);
+            margin-left:50%;
+            margin-top:-8%;
+            transform: translateX(-50%);
+        }
+    
+        .eventRegForm{
+            min-height:90vh;
+            width:80vw;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+
+            .plus_e{
+                margin-top:2vh;
+                margin-bottom:2vh;
+                label{
+                    margin-right:10px;
+                    font-weight: 600;
+                    font-size: large;
+                }
+                button{
+                    height:25px;
+                    width:25px;
+                    border-radius:50%;
+                    font-size: large;
+                }
+            }
+    
+            .fl{
+                display: flex;
+                flex-direction: column;
+                height:10vh;
+                justify-content: space-around;
+                width:40vw;
+                margin-top:2%;
+                font-weight: 600;
+
+                label{
+                    color:purple;
+                }
+            }
+            .team_event{
+                margin-top:2rem;
+            }
+
+            .btn{
+                padding:0.5rem;
+                background-color: #000000;
+                color: rgb(255, 255, 255);
+                border-radius: 10px;
+                margin-top: 5vh;
+                width:100px;
+                font-size: large;
+            }
+            button:hover{
+               cursor: pointer;
+            }
+            button:focus{
+              outline: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+
+    .outContainer{
+        min-height:100vh;
+        width:100vw;
+    
+        .event_registration{
+            background-color: rgba(255, 255, 255, 0.63);
+            min-height:100vh;
+            width:100vw;
+            top:0vh;
+            left:0vw;
+            margin-bottom:0;
+
+            .topRight{
+                position: absolute;
+                top:10%;
+                right:3%;
+                width:100%;
+                display: flex;
+                justify-content: space-around;
+    
+                span{
+                    padding:0.5rem;
+                    font-size: large;
+                }
+    
+                .btn{
+                    padding:0.5rem;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    border-radius: 10px;
+                    width:100px;
+                    font-size: large;
+                }
+            }
+
+            .head{
+                font-size:25px;
+                color:rgb(10, 55, 92);
+                white-space: nowrap;
+                margin-left:65%;
+                margin-top: 10%; 
+            }
+        
+            .eventRegForm{
+                min-height:90vh;
+                width:80vw;
+                margin-top:5vh;
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                position: relative;
+    
+                .plus_e{
+                    margin-top:2vh;
+                    margin-bottom:2vh;
+                    label{
+                        margin-right:10px;
+                        font-weight: 600;
+                        font-size: large;
+                    }
+                    button{
+                        height:25px;
+                        width:25px;
+                        border-radius:50%;
+                        font-size: large;
+                    }
+                }
+        
+                .fl{
+                    width:280px;
+                    margin-top:20px;
+
+                    label{
+                        margin-bottom:5px;
+                    }
+                }
+
+                .team_event{
+                    margin-top:2rem;
+                }
+    
+                .btn{
+                    padding:0.5rem;
+                    background-color: #0093D4;
+                    color: rgb(255, 255, 255);
+                    border-radius: 10px;
+                    margin-top: 5vh;
+                    width:100px;
+                    font-size: large;
+                }
+            }
+        }
+    }
+}
