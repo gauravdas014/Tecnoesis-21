@@ -37,7 +37,7 @@ router.post('/register', async (req, res) => {
 
         // console.log('new User', newUser)
 
-        res.redirect('/user/profile')
+        res.redirect('/eventRegister')
     } catch (error) {
         req.flash('error_msg', 'Internal Server Error')
 
@@ -66,7 +66,7 @@ router.post('/login', async (req, res) => {
             httpOnly: false,
         })
 
-        res.redirect('/user/profile')
+        res.redirect('/eventRegister')
     } catch (error) {
         req.flash('error_msg', 'Internal Server Error')
 
