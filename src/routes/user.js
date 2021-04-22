@@ -81,11 +81,11 @@ router.get('/logout', async (req, res) => {
 })
 
 //get requests
-router.get('/profile', userAuth, async (req, res) => {
-    res.render('user', {
-        user: req.user,
-    })
-})
+// router.get('/profile', userAuth, async (req, res) => {
+//     res.render('user', {
+//         user: req.user,
+//     })
+// })
 
 router.get('/login', async (req, res) => {
     res.render('login', {
@@ -99,105 +99,105 @@ router.get('/register', async (req, res) => {
     })
 })
 
-router.get('/edit', userAuth, async (req, res) => {
-    res.render('edit', {
-        user: req.user,
-    })
-})
+// router.get('/edit', userAuth, async (req, res) => {
+//     res.render('edit', {
+//         user: req.user,
+//     })
+// })
 
-//update responses
-router.put('/edit', userAuth, async (req, res) => {
-    console.log(req.body)
-    try {
-        const updates = Object.keys(req.body)
-        const allowedUpdates = ['name', 'phoneNo', 'email']
-        const isValid = updates.every((update) =>
-            allowedUpdates.includes(update)
-        )
+// //update responses
+// router.put('/edit', userAuth, async (req, res) => {
+//     console.log(req.body)
+//     try {
+//         const updates = Object.keys(req.body)
+//         const allowedUpdates = ['name', 'phoneNo', 'email']
+//         const isValid = updates.every((update) =>
+//             allowedUpdates.includes(update)
+//         )
 
-        if (!isValid) {
-            req.flash('error_msg', 'Invalid Updates')
+//         if (!isValid) {
+//             req.flash('error_msg', 'Invalid Updates')
 
-            return res.redirect('/user/profile')
-        }
+//             return res.redirect('/user/profile')
+//         }
 
-        const user = req.user
+//         const user = req.user
 
-        updates.forEach((update) => (user[update] = req.body[update]))
+//         updates.forEach((update) => (user[update] = req.body[update]))
 
-        await user.save()
+//         await user.save()
 
-        return res.redirect('/user/profile')
-    } catch (error) {
-        req.flash('error_msg', 'Internal Server Error')
+//         return res.redirect('/user/profile')
+//     } catch (error) {
+//         req.flash('error_msg', 'Internal Server Error')
 
-        return res.redirect('/user/profile')
-    }
-})
+//         return res.redirect('/user/profile')
+//     }
+// })
 
-router.get('/forgotpassword', async (req, res) => {
-    let token = req.cookies.authorization
-    if (token) {
-        let user = await utils.isAlreadyLoggedIn(token)
-        if (user) {
-            return res.redirect('/user/profile')
-        } else {
-            return res.render('forgotpassword')
-        }
-    } else {
-        return res.render('forgotpassword')
-    }
-})
+// router.get('/forgotpassword', async (req, res) => {
+//     let token = req.cookies.authorization
+//     if (token) {
+//         let user = await utils.isAlreadyLoggedIn(token)
+//         if (user) {
+//             return res.redirect('/user/profile')
+//         } else {
+//             return res.render('forgotpassword')
+//         }
+//     } else {
+//         return res.render('forgotpassword')
+//     }
+// })
 
-router.post('/forgotpassword', async (req, res) => {
-    let { email } = req.body
-    let user = await User.findOne({ email })
-    if (!user) {
-        res.render('forgotpassword')
-    }
-    let resetToken = await user.createPasswordResetToken()
+// router.post('/forgotpassword', async (req, res) => {
+//     let { email } = req.body
+//     let user = await User.findOne({ email })
+//     if (!user) {
+//         res.render('forgotpassword')
+//     }
+//     let resetToken = await user.createPasswordResetToken()
 
-    await user.save()
+//     await user.save()
 
-    // const resetURL = `${req.protocol}://${req.get(
-    //     'host'
-    // )}/user/resetpassword/${resetToken}`
-    let mailBody = `To reset yout password <a href="${resetToken}">click here</a>.`
-    let mailSubject = `Tecnoesis - Reset Password`
-    utils.sendEmail(email, mailBody, mailSubject)
+//     // const resetURL = `${req.protocol}://${req.get(
+//     //     'host'
+//     // )}/user/resetpassword/${resetToken}`
+//     let mailBody = `To reset yout password <a href="${resetToken}">click here</a>.`
+//     let mailSubject = `Tecnoesis - Reset Password`
+//     utils.sendEmail(email, mailBody, mailSubject)
 
-    res.send('Password reset link sent successfully')
-})
+//     res.send('Password reset link sent successfully')
+// })
 
-router.get('/resetpassword/:resetToken', async (req, res) => {
-    let resetToken = req.params.resetToken
-    let hashedToken = await crypto
-        .createHash('sha256')
-        .update(resetToken)
-        .digest('hex')
+// router.get('/resetpassword/:resetToken', async (req, res) => {
+//     let resetToken = req.params.resetToken
+//     let hashedToken = await crypto
+//         .createHash('sha256')
+//         .update(resetToken)
+//         .digest('hex')
 
-    let user = await User.findOne({
-        passwordResetToken: hashedToken,
-        resetTokenExpire: { $gt: Date.now() },
-    })
-    if (!user) return res.send('Invalid Password reset link')
+//     let user = await User.findOne({
+//         passwordResetToken: hashedToken,
+//         resetTokenExpire: { $gt: Date.now() },
+//     })
+//     if (!user) return res.send('Invalid Password reset link')
 
-    user.passwordResetToken = undefined
-    user.resetTokenExpire = undefined
-    await user.save()
-    // res.redirect(`/updatepassword/${user._id}`)
-    res.render('resetpassword', { userEmail: user.email })
-})
+//     user.passwordResetToken = undefined
+//     user.resetTokenExpire = undefined
+//     await user.save()
+//     // res.redirect(`/updatepassword/${user._id}`)
+//     res.render('resetpassword', { userEmail: user.email })
+// })
 
-router.post('/updatepassword/:userEmail', async (req, res) => {
-    let { password } = req.body
-    let email = req.params.userEmail
-    let user = await User.findOne({ email })
-    if (!user) {
-        return res.send('Invalid User')
-    }
-    user.password = password
-    await user.save()
-    res.send('Password Reset Successfull')
-})
+// router.post('/updatepassword/:userEmail', async (req, res) => {
+//     let { password } = req.body
+//     let email = req.params.userEmail
+//     let user = await User.findOne({ email })
+//     if (!user) {
+//         return res.send('Invalid User')
+//     }
+//     user.password = password
+//     await user.save()
+//     res.send('Password Reset Successfull')
+// })
 module.exports = router
