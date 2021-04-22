@@ -278,9 +278,9 @@ nav a:hover::before {
   overflow-y: scroll;
   position: relative;
   width: 70%;
-  height: 80%;
+  height: 65%;
   left: 30%;
-  top: 10%;
+  top: 20%;
   bottom: 10%;
   background: rgba(0, 0, 0, 0.9);
 }
@@ -295,7 +295,7 @@ nav a:hover::before {
 }
 
 .slides .slide:nth-child(1) {
-  background-image: url(../img/first_bg.jpg);
+  background-image: url(../../images/modules/first_bg.jpg);
   background-size: cover;
 }
 .slides .slide:nth-child(2) {
