@@ -12,7 +12,7 @@ const modules = [
                 eventName: "Ad-ovation",
                 teamBased: true,
                 minm: 1,
-                maxm: 4
+                maxm: 7
             }
         ]
     },
@@ -163,7 +163,7 @@ function memberNumberChange(){
             var requiredMemberString = 
             `<div class="team_member fl">
                 <label>Team Member Name (Member - ${count})*</label>
-                <input type='text' name='team_member_name_${count}' placeholder="Team Member Name" required/>
+                <input type='text' name='team_member_name_${count}' required/>
             </div>`;
             extraMem+= requiredMemberString;
             count++;
@@ -172,11 +172,11 @@ function memberNumberChange(){
             var memeberString = 
             `<div class="team_member fl">
             <label>Team Member Name (Member - ${count})</label>
-            <input type='text' name='team_member_name_${count}' placeholder="Team Member Name"/>
+            <input type='text' name='team_member_name_${count}' />
             </div>`;
             extraMem+= memeberString;
             count++;
         }
+        document.querySelector('.team_members').innerHTML = extraMem;
     }
-    console.log(extraMem);
 }
