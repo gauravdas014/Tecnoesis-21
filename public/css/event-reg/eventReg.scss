@@ -26,7 +26,10 @@ select,option{
 .outContainer{
     min-height:100vh;
     width:100vw;
-    background-color: rgba(8, 165, 238, 0.76);
+    background-image:url('../../images/Trial\ BG-01.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 
     .event_registration{
         background-color: white;
@@ -129,6 +132,7 @@ select,option{
                 font-size:30px;
                 color:rgb(10, 55, 92);
                 white-space: nowrap;
+                transform:translateX(10%);
             }
         
             .eventRegForm{

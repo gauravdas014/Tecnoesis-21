@@ -25,7 +25,10 @@ select, option {
 .outContainer {
   min-height: 100vh;
   width: 100vw;
-  background-color: rgba(8, 165, 238, 0.76);
+  background-image: url("../../images/Trial BG-01.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .outContainer .event_registration {
@@ -153,6 +156,8 @@ select, option {
     font-size: 30px;
     color: #0a375c;
     white-space: nowrap;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
   }
   .outContainer .event_registration .eventRegForm {
     min-height: 90vh;
