@@ -5,7 +5,7 @@ const modules = [
             {
                 eventName: "Pitch Please",
                 teamBased: true,
-                minm: 2,
+                minm: 1,
                 maxm: 4
             },
             {
@@ -31,7 +31,7 @@ const modules = [
                 eventName: "Data Strata",
                 teamBased: true,
                 minm: 1,
-                maxm: 4
+                maxm: 3
             },
             {
                 eventName: "Cyberbot",
@@ -52,7 +52,7 @@ const modules = [
                 eventName: "Mascot Making",
                 teamBased: true,
                 minm: 1,
-                maxm: 4
+                maxm: 2
             },
             {
                 eventName: "Draft Ritz 4.0",
@@ -91,8 +91,8 @@ const modules = [
             {
                 eventName: "My City My Dream",
                 teamBased: true,
-                minm: 1,
-                maxm: 4
+                minm: 2,
+                maxm: 3
             }
         ]
     },
