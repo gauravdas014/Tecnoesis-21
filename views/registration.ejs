@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/event-reg/eventReg.css">
+    <title>Event Registration</title>
+</head>
+<body>
+    
+    <div class='event_registration'>
+        <h2>Event Registration</h2>
+        <form class='eventRegForm'>
+            <div class='module'>
+                <label>Module Name</label>
+                <select name="moduleName" id="moduleName">
+                    <option value="Empessario">Empessario</option>
+                    <option value="CyberWarp">CyberWarp</option>
+                    <option value="Asme">Asme</option>
+                    <option value="V-warz">V-warz</option>
+                    <option value="Smart-city">Smart-city</option>
+                    <option value="Robotics">Robotics</option>
+                  </select>
+            </div>
+            <div class='events_associated'>
+                <label>Event Name</label>
+                <select name="eventName" id="eventName">
+                    <option value='Nibble Code'>Nibble Code</option>
+                    <option value='Pixellete 2021'>Pixellete 2021</option>
+                    <option value="Data Strata" >Data Strata</option>
+                    <option value="Cyber bot" >Cyber bot</option>
+                </select>
+           </div>
+
+           <div class='team_event hide'>
+              
+               <div class="team_name_e">
+                  <label>Team Name</label>
+                  <input type='text' name='team_name'/>
+               </div>
+
+               <div class="team_leader_e">
+                  <label>Team Leader</label>
+                  <input type='text' name='team_leader'/>
+                </div>
+           </div>
+
+           <div class="name_e">
+               <label>Name</label>
+               <input type='text' name='name'/>
+           </div>
+           
+           <div class="email_e">
+               <label>Email</label>
+               <input type='email' name='email'/>
+            </div>
+           
+            <div class="phoneNo_e">
+               <label>Phone Number</label>
+               <input type='Number' name='phone_No'/>
+            </div>
+           <div class="address_e">
+               <label>Adress</label>
+               <input type='text' name='address'/>
+           </div>
+
+           <div class='plus_e hide'>
+                 <label>Add</label>
+                 <button>+</button>
+           </div>
+
+           <button type="submit">Register</button>
+        
+        </form>
+    </div>
+
+    <script src="./js/event-reg/eventReg.js"></script>
+</body>
+</html>
