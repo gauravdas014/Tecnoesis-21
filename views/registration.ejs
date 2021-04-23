@@ -16,15 +16,16 @@
         <div class='event_registration'>
             <div class='heading'>
                 <div class='img'>
-                   <a href= "/"><img src='./images/tecnoesis logo 2021xxxhdpi.png' /></a> 
+                    <a href="/"><img src='./images/tecnoesis logo 2021xxxhdpi.png' /></a>
                 </div>
             </div>
 
-            <h2 class="head" style="white-space: nowrap;">Event Registration</h2>
-
+            <h2 class="head">Event Registration</h2>
 
             <div class='topRight'>
-                <span><%= userName %></span>
+                <span>
+                    <%= userName %>
+                </span>
                 <button class="btn">
                     <a href='/user/logout' style="text-decoration: none;color:white">Sign Out</a>
                 </button>
@@ -73,7 +74,8 @@
 
                     <div class="team_leader_phoneNo_e fl">
                         <label>Team Leader Phone Number*</label>
-                        <input type="tel" pattern="^[0-9]{10}$" title="10 digit phone number" onkeypress="return onlyNumberKey(event)" name='team_leader_phone_No' />
+                        <input type="tel" pattern="^[0-9]{10}$" title="10 digit phone number"
+                            onkeypress="return onlyNumberKey(event)" name='team_leader_phone_No' />
                     </div>
 
                     <div class="team_leader_address_e fl">
@@ -100,7 +102,8 @@
 
                     <div class="phoneNo_e fl">
                         <label>Phone Number*</label>
-                        <input type="tel" pattern="^[0-9]{10}$" title="10 digit phone number" onkeypress="return onlyNumberKey(event)" name='phone_No' />
+                        <input type="tel" pattern="^[0-9]{10}$" title="10 digit phone number"
+                            onkeypress="return onlyNumberKey(event)" name='phone_No' />
                     </div>
 
                     <div class="address_e fl">
