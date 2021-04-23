@@ -4,7 +4,6 @@
   position: fixed;
   right: 15%;
   top: 3.5em;
-  background-color: transparent;
   border: none;
   cursor: pointer;
   display: -webkit-box;
@@ -12,6 +11,7 @@
   display: flex;
   padding: 0;
   z-index: 3000;
+  background-color: transparent;
 }
 
 .menu:focus {
@@ -94,6 +94,9 @@
   z-index: 2;
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  background-image: url('../../images/navbar/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar.navopen {
