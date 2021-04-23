@@ -15,6 +15,11 @@
 
 <body>
   <!-- partial:index.partial.html -->
+
+    <div style='position:fixed;margin-top:-60vh;z-index: 10000;height:10vh;font-size: larger;font-weight: 400;'>
+        <%- include("./partials/messages") %>
+    </div>
+
   <div class="logo">
     <a href="/"><img src="/images/tecnoesis logo 2021xxxhdpi.png" alt=""></a>
 </div>
@@ -29,19 +34,19 @@
         <p>Don't have an account?</p>
 
         <label for="name">Full name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" placeholder="Enter your name" name="name" required>
         <!-- <label for="pin">PIN:</label><br>
 			<input type="text" id="pin" name="pin" maxlength="4" size="4"><br> -->
         <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        <input type="email" id="email" placeholder="Enter your email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
         <label for="phone">Phone:</label>
-        <input type="tel" pattern="^[0-9]{10}$" title="10 digit phone number" onkeypress="return onlyNumberKey(event)" id="phone" name="phone" required>
+        <input type="tel" pattern="^[0-9]{10}$" placeholder="Enter your number" title="10 digit phone number" onkeypress="return onlyNumberKey(event)" id="phone" name="phone" required>
         <label for="password">Password</label>
         <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required>
         <label for="password">Confirm Password</label>
         <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password"
           minlength="8" required>
-        <button type="submit">Sign Up</button>
+        <center><button type="submit" style="cursor: pointer">Sign Up</button></center>
       </form>
 
       <a href="#" id="signIn">Already have an account? Sign In</a>
@@ -57,10 +62,10 @@
         <p>Welcome, We missed you!</p>
 
         <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        <input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
         <label for="password">Password</label>
         <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required>
-        <button type="submit">Sign In</button>
+        <center><button type="submit" style="cursor: pointer">Sign In</button></center>
       </form>
 
       <a href="#" id="signUp">Don't have an account? Sign Up</a>
