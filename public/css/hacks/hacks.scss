@@ -946,26 +946,10 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   background: $white;
 
-  .team_heading{
-      position:relative;
-      display: block;
-      top:0;
-      padding-top:13vh;
-      padding-bottom:5vh;
-
-      div{
-          width:50%;
-          height:5px;
-          margin-left:50%;
-          transform: translateX(-50%);
-          color: $white;
-          background-color:$secondary-blue;
-      }
-  }
   .team_gallery{
     
       width:80vw;
-      height:700vh;
+      height:600vh;
       display:flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -990,28 +974,7 @@ body {
           height:160vh;
           background-color: rgba($white, 0.8);
           padding-bottom:2rem;
-          margin-top: -30vh;
-
-          h2 {
-            padding-top: 5rem;
-          }
-
-          h2 {
-            transform: translateY(5rem);
-          }
-      }
-
-      &-3{
-          height:60vh;
-          margin-top:-60vh;
-      }
-      &-4{
-          height:60vh;
-          margin-top:-60vh;
-      }
-      &-5{
-          height:60vh;
-          margin-top:-60vh;
+          margin-top: -60vh;
       }
 
       &-1-1,&-2-2,&-3-3{
@@ -1207,130 +1170,23 @@ body {
           }
         }
       }
+      &-2-2{
+        min-height:120vh;
+      }
+
+      
+      &-3{
+        height:70vh;
+        margin-top:0vh;
+
+        .team_gallery-3-3{
+          height:70vh;
+          margin-top:20vh;
+        }
+    }
   }
 }
 
-//gallery
-/*--------------------------------------------------------------
-# Gallery Section
---------------------------------------------------------------*/
-.gallery-slider{
-  height:500px;
-  margin-top:-60vh;
-}
-
-.swiper-pagination {
-  position: relative;
-  margin-top:-10vh;
-}
-
-
-.swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: $white;
-  opacity: 1;
-  border: 1px solid $primary-blue;
-}
-
- .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: $primary-blue;
-}
-  
-.gallery-lightbox_card{
-
-   position:absolute;
-   transition:0.5s;
-
-   *{
-     text-decoration: none;
-     text-align: center;
-     color:$white;
-   }
-
-    .para{
-
-      .first_para{
-    
-        height:10vh;
-        padding:0.5rem;
-        width:100%;
-        color:$white;
-        transition:0.3s;
-        background-color: $black;
-
-        span:first-child,span:last-child{
-            padding:0.5rem;
-            z-index: 1000;
-            opacity:1;
-        } 
-        span:first-child{
-            color:$primary-blue;
-            letter-spacing:1px;
-        }
-        span:first-child:hover{
-            color:$primary-blue;
-            cursor: pointer;
-        }
-      }
-      .second_para{
-       
-        padding-bottom:1rem;
-        width:100%;
-        height:5vh;
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
-        background-color: $black;
-        margin-top:-1.1rem;
-        opacity:0;
-        transform: scaleY(0);
-        transition:0.5s;
-        transform-origin: top;
-
-        //social links
-        a.links{
-          text-decoration: none;
-          background-color: $white;
-          color:$black;
-          font-size:medium;
-          padding:0.3rem 0.5rem;
-          border-radius:20%;
-        }
-
-        a.fb{
-          color:$primary-blue;
-        }
-        a.ln{
-          color:$primary-blue;
-        }
-        a.git{
-          color:$black;
-        }
-
-        a.links:hover{
-         color: $white;
-         
-         &.fb{
-           background-color:$primary-blue;
-         }
-         &.ln{
-           background-color:$primary-blue;
-         }
-         &.git{
-           background-color:$black;
-         }
-       }
-      }
-    }
-    &:hover{
-      transform: translateY(-5vh);
-    }
-    &:hover .para .second_para{
-      transform: scaleY(1);
-      opacity:1;
-    }
- }
 
 //contact us
 .contact{
