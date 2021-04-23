@@ -35,6 +35,7 @@ label {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  overflow-y: hidden;
 }
 
 input {
