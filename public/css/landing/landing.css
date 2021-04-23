@@ -267,6 +267,8 @@ section:not(.first) {
 
 /* buttons */
 .btnfos {
+    position: relative;
+    top: 70vh;
     color: black;
     cursor: pointer;
     display: block;
@@ -1223,9 +1225,9 @@ textarea + .parsley-errors-list {
   #about-desc {
     display: block;
     position: absolute;
-    margin-top: -8rem;
+    margin-top: -6rem;
     /* margin-left: 0rem; */
-    font-size: 1.3rem;
+    font-size: 1rem;
     left: 50%;
     transform: translateX(-50%);
     width: 90% !important;
@@ -1234,13 +1236,13 @@ textarea + .parsley-errors-list {
     position: relative;
     display: block;
     width: 10rem;
-    margin-top: -3rem;
+    margin-top: -5rem;
     margin-left: 0rem;
   }
   #modules-desc {
     display: block;
     position: absolute;
-    margin-top: -8rem;
+    margin-top: -12rem;
     /* margin-left: 0rem; */
     font-size: 1.1rem;
     left: 50%;
@@ -1251,7 +1253,7 @@ textarea + .parsley-errors-list {
     position: absolute;
     display: block;
     width: 10rem;
-    top: 20rem;
+    top: 24rem;
     margin-top: 0rem;
     margin-left: 0rem;
     font-size: 0.8rem;
@@ -1261,7 +1263,7 @@ textarea + .parsley-errors-list {
     position: relative;
     display: block;
     width: 10rem;
-    margin-top: -3rem;
+    margin-top: -4rem;
     margin-left: 0rem;
     font-size: 1.5rem !important;
     transform: translateX(-70%) !important;
@@ -1269,7 +1271,7 @@ textarea + .parsley-errors-list {
   #hacks_desc {
     display: block;
     position: absolute;
-    margin-top: -8rem;
+    margin-top: -9rem;
     /* margin-left: 0rem; */
     font-size: 1.1rem;
     left: 50%;
@@ -1287,7 +1289,7 @@ textarea + .parsley-errors-list {
     font-size: 0.8rem;
     text-decoration: underline;
     position: relative;
-    top: -1rem;
+    top: 2rem;
     left: 50%;
     transform: translateX(-80%);
   }
