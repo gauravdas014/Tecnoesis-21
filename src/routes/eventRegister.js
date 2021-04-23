@@ -46,6 +46,9 @@ const EVENTS = {
     'Robo Mania': {
         teamBased: true,
     },
+    'NITS Hacks 4.0': {
+        teamBased: true,
+    },
 }
 
 router.get('/', userAuth, (req, res) => {
@@ -87,13 +90,13 @@ router.post('/', userAuth, async (req, res) => {
         user.registeredEvents.push(event)
         await user.save()
 
-        req.flash('success_msg', 'Sucessfully Registered to the event');
+        req.flash('success_msg', 'Sucessfully Registered to the event')
 
         res.redirect('/eventRegister')
     } catch (error) {
         console.trace(error)
 
-        req.flash('error_msg', 'Some Error Occured ! Register Again!');
+        req.flash('error_msg', 'Some Error Occured ! Register Again!')
 
         res.redirect('/eventRegister')
     }

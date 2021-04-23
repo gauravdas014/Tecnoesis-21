@@ -600,9 +600,7 @@ p {
 ===========================*/
 /*===== NAVBAR EIGHT =====*/
 .navbar-area {
-  background: -webkit-linear-gradient(left, #43cae9 0%, #38f9d7 100%);
-  background: -o-linear-gradient(left, #43cae9 0%, #38f9d7 100%);
-  background: linear-gradient(to right, #43cae9 0%, #38f9d7 100%);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px 0;
   position: absolute;
   top: 0;
@@ -1095,8 +1093,6 @@ p {
 /*===== SLIDER ONE =====*/
 .slider-area {
   padding-top: 94px; }
-  .slider-area .bd-example .carousel .carousel-inner {
-    background-color: #38f9d7; }
     .slider-area .bd-example .carousel .carousel-inner .carousel-item {
       height: 700px; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1302,7 +1298,9 @@ p {
 ===========================*/
 .about-area {
   position: relative;
-  background-color: #f4f6f7;
+  background-image: url('../../../images/bg-01.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 100px; }
   .about-area .section-title .title {
