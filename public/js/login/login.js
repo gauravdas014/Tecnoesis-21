@@ -14,3 +14,12 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 	signInForm[0].classList.remove("left-panel-active")
 });
+
+function onlyNumberKey(evt) {
+          
+	// Only ASCII charactar in that range allowed
+	var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+	if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+		return false;
+	return true;
+}
