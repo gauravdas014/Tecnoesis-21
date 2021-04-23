@@ -172,7 +172,7 @@ var initMouse = function (array){
   Matter.Events.on(mouseConstraint, 'startdrag', removeInfo);
 
   // catBody category objects should not be draggable with the mouse
-  // mouseConstraint.collisionFilter.mask = 0x0002 | categories.catMouse;
+  mouseConstraint.collisionFilter.mask = 0x0002 | categories.catMouse;
 }
 
 // helpful function
