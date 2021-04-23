@@ -240,7 +240,7 @@ var initBouncer = function(){
     frictionAir:0.001,
     friction:0,
     collisionFilter: {
-        category: categories.catMouse
+        category: categories.catBody
     },
   });
 

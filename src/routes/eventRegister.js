@@ -46,7 +46,7 @@ const EVENTS = {
     'Robo Mania': {
         teamBased: true,
     },
-    'NITS Hacks 4.0': {
+    'Inter College Coding Competition': {
         teamBased: true,
     },
 }
@@ -58,12 +58,13 @@ router.get('/', userAuth, (req, res) => {
 router.post('/', userAuth, async (req, res) => {
     try {
         let user = req.user
-
+        // console.log(req.body)
         let event = new Object({
             eventName: req.body.eventName,
             isTeamBased: EVENTS[req.body.eventName].teamBased,
             moduleName: req.body.moduleName,
         })
+        // console.log({ event })
         if (event.isTeamBased) {
             event.teamName = req.body.team_name
             event.teamLeaderName = req.body.team_leader_name
