@@ -39,7 +39,7 @@ router.post('/register', async (req, res) => {
 
         res.redirect('/eventRegister')
     } catch (error) {
-        req.flash('error_msg', 'Internal Server Error')
+        req.flash('error_msg', 'Some Error Occured! Please Register Again!')
 
         return res.redirect('/user/register')
     }
@@ -68,7 +68,7 @@ router.post('/login', async (req, res) => {
 
         res.redirect('/eventRegister')
     } catch (error) {
-        req.flash('error_msg', 'Internal Server Error')
+        req.flash('error_msg', 'Some Error Occured! Please Login Again!')
 
         return res.redirect('/user/login')
     }

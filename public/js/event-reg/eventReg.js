@@ -104,6 +104,17 @@ const modules = [
                 maxm: 3
             }
         ]
+    },
+    {
+        moduleName: "NITS Hacks 4.0",
+        events:[
+            {
+                eventName: "Inter College Coding Competition",
+                teamBased: true,
+                minm: 1,
+                maxm: 3
+            }
+        ]
     }
 ] ;
 
@@ -148,13 +159,20 @@ function memberNumberChange(){
         return selectedEventName === mod.eventName
     })
     if( !requiredEvent.teamBased ){
-        individualBlock.style.display = 'block';
-        teamBlock.style.display = 'none';
-        
+        individualBlock.style.display = "block";
+        teamBlock.style.display = "none";
+
+        displayNone(teamBlock);
+        displayBlock(individualBlock);
+    
     }
     else{
-        individualBlock.style.display = 'none';
-        teamBlock.style.display = 'block';
+        individualBlock.style.display = "none";
+        teamBlock.style.display = "block";
+
+        displayNone(individualBlock);
+        displayBlock(teamBlock);
+
         var count = 2;
         var extraMem = "";
         while(count <= requiredEvent.minm){
@@ -177,4 +195,26 @@ function memberNumberChange(){
         }
         document.querySelector('.team_members').innerHTML = extraMem;
     }
+}
+
+function displayNone(list){
+    Array.from(list.querySelectorAll('input')).map(inField => {
+        inField.style.display = "none";
+    })
+}
+
+function displayBlock(list){
+    Array.from(list.querySelectorAll('input')).map(inField => {
+        inField.style.display = "block";
+    })
+}
+
+
+function onlyNumberKey(evt) {
+          
+	// Only ASCII charactar in that range allowed
+	var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+	if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+		return false;
+	return true;
 }

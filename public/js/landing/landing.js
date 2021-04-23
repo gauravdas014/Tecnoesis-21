@@ -86,12 +86,4 @@ $(document).ready(function(){
   $("#loader").show();
 });
 
-setTimeout(function() {
-  $('#loader').fadeOut('slow', function() {
-    $(this).remove();
-  });
-}, 2000);
-$(document).ready(function(){
-  $(this).scrollTop(0);
-});
 
