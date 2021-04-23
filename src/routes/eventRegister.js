@@ -86,9 +86,15 @@ router.post('/', userAuth, async (req, res) => {
         }
         user.registeredEvents.push(event)
         await user.save()
-        res.redirect('/')
+
+        req.flash('success_msg', 'Sucessfully Registered to the event');
+
+        res.redirect('/eventRegister')
     } catch (error) {
         console.trace(error)
+
+        req.flash('error_msg', 'Some Error Occured ! Register Again!');
+
         res.redirect('/eventRegister')
     }
 })
