@@ -47,20 +47,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Stylings -->
 </head>
-
+<div class="loader" id="loader">
+    <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_40upoonw.json" background="transparent"
+        speed="1" loop autoplay></lottie-player>
+</div>
 <body>
-    <div class="loader" id="loader">
-        <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_40upoonw.json" background="transparent"
-            speed="1" loop autoplay></lottie-player>
-    </div>
     <nav class="navbar">
         <div class="content">
             <ul class="nav-items">
                 <li class="nav-item"><a class="n1" href="/">Home</a></li>
                 <li class="nav-item"><a class="n2" href="/modules">Modules</a></li>
-                <li class="nav-item"><a class="n3" href="">Schedule</a></li>
+                <li class="nav-item"><a class="n3" href="/schedule">Schedule</a></li>
                 <li class="nav-item"><a class="n3" href="/hacks">NITS::Hacks 4.0</a></li>
-                <li class="nav-item"><a class="n3" href="">Team</a></li>
+                <li class="nav-item"><a class="n3" href="/team">Team</a></li>
             </ul>
         </div>
     </nav>
@@ -235,11 +234,11 @@
                     <p class="title">Mail Us Instead</p>
                     <input data-parsley-no-focus data-parsley-error-message="Please enter a valid email address."
                         required placeholder="Email" type="email" class="text"
-                        style="padding: 10px; background-color: white; font-family: Open Sans; border-radius: 5px; border-width: 1px;"
+                        style="padding: 10px; background-color: rgb(27, 27, 27); font-family: Open Sans; border-radius: 5px; border-width: 1px;"
                         name="email">
                     <input class="text" placeholder="Message" required data-parsley-no-focus
                         data-parsley-error-message="Please enter a message."
-                        style="padding: 10px; background-color: white; font-family: Source Sans Pro; border-radius: 5px; border-width: 1px; height: 70px;"
+                        style="padding: 10px; background-color:rgb(27, 27, 27); font-family: Source Sans Pro; border-radius: 5px; border-width: 1px; height: 70px;"
                         name="message">
                     <p class='text'><button class="submit button" type="submit">Submit</button></p>
                 </div>
@@ -255,10 +254,11 @@
         </section>
     </main>
 </body>
-<script>
-    $(document).ready(function () {
-        $(window).scrollTop(0);
+<script> 
+    document.onload(function(){
+        window.scrollTo(0,0);
+        var loader=document.getElementById("loader");
+        loader.style.display="none";
     });
 </script>
-
 </html>
