@@ -46,6 +46,9 @@ const EVENTS = {
     'Robo Mania': {
         teamBased: true,
     },
+    'Inter College Coding Competition': {
+        teamBased: true,
+    },
 }
 
 router.get('/', userAuth, (req, res) => {
@@ -55,12 +58,13 @@ router.get('/', userAuth, (req, res) => {
 router.post('/', userAuth, async (req, res) => {
     try {
         let user = req.user
-
+        // console.log(req.body)
         let event = new Object({
             eventName: req.body.eventName,
             isTeamBased: EVENTS[req.body.eventName].teamBased,
             moduleName: req.body.moduleName,
         })
+        // console.log({ event })
         if (event.isTeamBased) {
             event.teamName = req.body.team_name
             event.teamLeaderName = req.body.team_leader_name
@@ -87,13 +91,13 @@ router.post('/', userAuth, async (req, res) => {
         user.registeredEvents.push(event)
         await user.save()
 
-        req.flash('success_msg', 'Sucessfully Registered to the event');
+        req.flash('success_msg', 'Sucessfully Registered to the event')
 
         res.redirect('/eventRegister')
     } catch (error) {
         console.trace(error)
 
-        req.flash('error_msg', 'Some Error Occured ! Register Again!');
+        req.flash('error_msg', 'Some Error Occured ! Register Again!')
 
         res.redirect('/eventRegister')
     }

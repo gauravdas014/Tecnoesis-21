@@ -77,8 +77,8 @@ window.addEventListener('scroll', () => {
     })
     if(current === '' ) index=0;
     else if(current === 'about') index=1;
-    else if (current === 'events') index =2;
-    else if (current === 'team') index =3;
+    else if (current === 'schedule') index =2;
+    else if (current === 'events') index =3;
     else if(current === 'contact') index =4;
 
        for (let i = 0; i < index; i++) {

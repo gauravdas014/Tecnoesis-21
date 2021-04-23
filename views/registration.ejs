@@ -6,8 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/event-reg/eventReg.css">
-    <title>Event Registration</title>
+    <title>Tecnoesis | Event Registration</title>
     <link rel="icon" href="/images/icon.png">
+    <style>
+        .outContainer .event_registration .topRight .btn{
+            
+            background-color: #994e9a;
+            border-radius: 5px;
+        }
+        .outContainer .event_registration .eventRegForm .btn{
+            background-color: #994e9a;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,15 +27,16 @@
         <div class='event_registration'>
             <div class='heading'>
                 <div class='img'>
-                    <img src='./images/tecnoesis logo 2021xxxhdpi.png' />
+                    <a href="/"><img src='./images/tecnoesis logo 2021xxxhdpi.png' /></a>
                 </div>
             </div>
 
-            <h2 class="head" style="white-space: nowrap;">Event Registration</h2>
-
+            <h2 class="head">Event Registration</h2>
 
             <div class='topRight'>
-                <span><%= userName %></span>
+                <span>
+                    <%= userName %>
+                </span>
                 <button class="btn">
                     <a href='/user/logout' style="text-decoration: none;color:white">Sign Out</a>
                 </button>
@@ -45,7 +57,7 @@
                         <option value="V-warz">V-warz</option>
                         <option value="Smart City">Smart City</option>
                         <option value="Robotics">Robotics</option>
-                        <option value="NITS Hacks 4.0">NITS Hacks 4.0</option>
+                        <!-- <option value="NITS Hacks 4.0">NITS Hacks 4.0</option> -->
                     </select>
                 </div>
 
@@ -73,7 +85,8 @@
 
                     <div class="team_leader_phoneNo_e fl">
                         <label>Team Leader Phone Number*</label>
-                        <input type="tel" pattern="^[0-9]{10}$" title="10 digit phone number" onkeypress="return onlyNumberKey(event)" name='team_leader_phone_No' />
+                        <input type="tel" pattern="^[0-9]{10}$" title="10 digit phone number"
+                            onkeypress="return onlyNumberKey(event)" name='team_leader_phone_No' />
                     </div>
 
                     <div class="team_leader_address_e fl">
@@ -100,7 +113,8 @@
 
                     <div class="phoneNo_e fl">
                         <label>Phone Number*</label>
-                        <input type="tel" pattern="^[0-9]{10}$" title="10 digit phone number" onkeypress="return onlyNumberKey(event)" name='phone_No' />
+                        <input type="tel" pattern="^[0-9]{10}$" title="10 digit phone number"
+                            onkeypress="return onlyNumberKey(event)" name='phone_No' />
                     </div>
 
                     <div class="address_e fl">
