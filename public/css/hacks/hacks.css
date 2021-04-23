@@ -1004,7 +1004,7 @@ body {
   background-color: #1c65c5;
 }
 
-.team {
+.team{
   width: 100vw;
   height: auto;
   position: relative;
@@ -1027,7 +1027,7 @@ body {
 
 .team .team_gallery {
   width: 80vw;
-  height: 500vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1044,7 +1044,7 @@ body {
 }
 
 .team .team_gallery-1, .team .team_gallery-2, .team .team_gallery-3 {
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1059,22 +1059,9 @@ body {
           align-items: center;
 }
 
-.team .team_gallery-1 {
-  height: 10vh;
-  padding-top: 10vh;
-  margin-top: -100vh;
-}
-
-.team .team_gallery-2 {
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding-bottom: 2rem;
-  margin-top: -60vh;
-}
-
 .team .team_gallery-1-1, .team .team_gallery-2-2, .team .team_gallery-3-3 {
   position: relative;
-  width: 80vw;
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1093,10 +1080,12 @@ body {
 }
 
 .team .team_gallery-1-1 .card, .team .team_gallery-2-2 .card, .team .team_gallery-3-3 .card {
-  width: 350px;
+  width: 300px;
   height: 350px;
   position: relative;
   overflow: hidden;
+  margin-top:15vh;
+  margin-left:5vw;
 }
 
 .team .team_gallery-1-1 .card img, .team .team_gallery-2-2 .card img, .team .team_gallery-3-3 .card img {
@@ -1132,7 +1121,7 @@ body {
 }
 
 .team .team_gallery-1-1 .card div p:first-child span:first-child, .team .team_gallery-2-2 .card div p:first-child span:first-child, .team .team_gallery-3-3 .card div p:first-child span:first-child {
-  color: #133ea1;
+  color:yellow;
   letter-spacing: 1px;
 }
 
@@ -1209,7 +1198,7 @@ body {
 }
 
 .team .team_gallery-1-1 .card1, .team .team_gallery-2-2 .card1, .team .team_gallery-3-3 .card1 {
-  width: 350px;
+  width: 300px;
   height: 350px;
   position: relative;
   margin-left: 2vw;
@@ -1312,21 +1301,9 @@ body {
 .team .team_gallery-1-1 .card1 div p:last-child a:hover.git, .team .team_gallery-2-2 .card1 div p:last-child a:hover.git, .team .team_gallery-3-3 .card1 div p:last-child a:hover.git {
   color: #000;
 }
-
-.team .team_gallery-2-2 {
-  min-height: 120vh;
+.team_gallery-2{
+  margin-bottom:10vh;
 }
-
-.team .team_gallery-3 {
-  height: 0vh;
-  margin-top: 0vh;
-}
-
-.team .team_gallery-3 .team_gallery-3-3 {
-  height: 50vh;
-  margin-top: 20vh;
-}
-
 .contact {
   padding: 10vh 0;
   width: 100vw;
@@ -2209,35 +2186,33 @@ body {
     color: white;
     background: rgba(0, 0, 0, 0.5);
   }
-  .team {
-    width: 100vw;
-    min-height: 1200vh;
-  }
+
+
   .team .team_heading {
     position: absolute;
     top: 0;
   }
   .team .team_gallery {
-    width: 80vw;
-    height: 1200vh;
+    width:100%;
+    height: auto;
   }
   .team .team_gallery-1 {
-    height: 60vh;
-    margin-top: 0vh;
-    margin-left: 10vw;
+    height:auto;
+    margin-left: 0vw;
   }
   .team .team_gallery-2 {
-    height: 420vh;
+    height:auto;
     padding: 1rem 2rem;
     margin-top: 20vh;
   }
   .team .team_gallery-3 {
-    height: 700vh;
-    margin-top: 0vh;
+    height:auto;
+    margin-top:auto;
   }
   .team .team_gallery-1-1 .card, .team .team_gallery-2-2 .card, .team .team_gallery-3-3 .card {
-    width: 350px;
+    width: 300px;
     height: 350px;
+    margin-bottom:50px;
   }
   .team .team_gallery-1-1 .card img, .team .team_gallery-2-2 .card img, .team .team_gallery-3-3 .card img {
     height: 100%;
@@ -2246,30 +2221,9 @@ body {
   .team .team_gallery-1-1 .card, .team .team_gallery-2-2 .card, .team .team_gallery-3-3 .card {
     margin-top: 5vh;
   }
-  .team .team_gallery-1-1 .card1, .team .team_gallery-2-2 .card1, .team .team_gallery-3-3 .card1 {
-    width: 350px;
-    height: 400px;
-    margin-left: 2vw;
-    margin-top: 20vh;
-  }
-  .team .team_gallery-1-1 .card1 .card1_img, .team .team_gallery-2-2 .card1 .card1_img, .team .team_gallery-3-3 .card1 .card1_img {
-    height: 296px;
-    width: 100%;
-  }
-  .team .team_gallery-1-1 .card1 .card1_img img, .team .team_gallery-2-2 .card1 .card1_img img, .team .team_gallery-3-3 .card1 .card1_img img {
-    height: 120%;
-    width: 100%;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .team .team_gallery-1-1 .card1 div p:first-child span:first-child, .team .team_gallery-2-2 .card1 div p:first-child span:first-child, .team .team_gallery-3-3 .card1 div p:first-child span:first-child {
-    white-space: nowrap;
-  }
-  .gallery-slider {
-    margin-top: -90vh;
-  }
+ 
   .contact {
-    margin-top: 5rem;
+    margin-top:0vh; 
     width: 100vw;
     height: 200vh;
     position: relative;
@@ -2576,3 +2530,12 @@ body {
   }
 }
 /*# sourceMappingURL=hacks.css.map */
+@media only screen and (max-width: 700px){
+.event {
+    height: 320vh;
+}
+.event .heading p {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+}
+}
