@@ -3,7 +3,6 @@
 @import url('http://fonts.cdnfonts.com/css/greenth');
 main {
     height: 100%;
-    background-image: url('/images/landing/bg1.png');
 }
 
 .first {
@@ -357,7 +356,8 @@ section:not(.first) {
 }
 
 #about-desc {
-    margin-top: 17%;
+    margin-top: 23%;
+    margin-left: 5%;
 }
 
 #hacks-btn {
@@ -852,8 +852,7 @@ textarea + .parsley-errors-list {
 #loader{
     height: 100%;
     width: 100%;
-    animation: disappear 2s;
-    opacity: 0%;
+    opacity: 100%;
     z-index: 1000;
 }
 @keyframes disappear {

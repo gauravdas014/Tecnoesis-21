@@ -82,3 +82,16 @@ gsap.to("#second", {
   document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
 
+$(document).ready(function(){
+  $("#loader").show();
+});
+
+setTimeout(function() {
+  $('#loader').fadeOut('slow', function() {
+    $(this).remove();
+  });
+}, 2000);
+$(document).ready(function(){
+  $(this).scrollTop(0);
+});
+
