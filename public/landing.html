@@ -47,19 +47,17 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Stylings -->
 </head>
-<!-- <div class="loader" id="loader" style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;height: 100%; width: 100%; ">
-    <div class="status"><lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_40upoonw.json" background="transparent"
-        speed="1" loop autoplay></lottie-player></div>
-</div> -->
+    
 <body>
+    <div id="loader"><div id="status" style="background-image: url(../public/images/preloaderbg.png); background-size: cover; background-repeat: no-repeat;"><lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_i5zd3fq6.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;display: block;"  loop  autoplay></lottie-player></div></div>
     <nav class="navbar">
         <div class="content">
             <ul class="nav-items">
                 <li class="nav-item"><a class="n1" href="/">Home</a></li>
                 <li class="nav-item"><a class="n2" href="/modules">Modules</a></li>
-                <li class="nav-item"><a class="n3" href="/schedule">Schedule</a></li>
+                <li class="nav-item"><a class="n3" href="">Schedule</a></li>
                 <li class="nav-item"><a class="n3" href="/hacks">NITS::Hacks 4.0</a></li>
-                <li class="nav-item"><a class="n3" href="/team">Team</a></li>
+                <li class="nav-item"><a class="n3" href="">Team</a></li>
             </ul>
         </div>
     </nav>
@@ -256,10 +254,11 @@
 </body>
 <script>
 jQuery(window).load(function() {
-// will first fade out the loading animation
-jQuery("#status").fadeOut();
+    setTimeout(function(){jQuery("#status").fadeOut();
 // will fade out the whole DIV that covers the website.
 jQuery("#loader").delay(1000).fadeOut("slow");
+},1000);
+// will first fade out the loading animation
 })
 </script>
 </html>
