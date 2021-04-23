@@ -591,7 +591,7 @@ padding-top: 0;
 .team{
 
       width:100vw;
-      min-height:900vh;
+      min-height:1200vh;
 
       .team_heading{
         position: absolute;
@@ -601,23 +601,24 @@ padding-top: 0;
   .team_gallery{
     
       width:80vw;
-      height:650vh;
+      height:1200vh;
 
       &-1{
           height:60vh;
-          margin-top:-70vh;
+          margin-top:0vh;
           margin-left:10vw;
       }
 
       &-2{
           height:420vh;
           padding:1rem 2rem;
-          margin-top: 0vh;
+          margin-top: 20vh;
       }
 
       &-3{
-          height:6000vh;
+          height:700vh;
           margin-top:0vh;
+ 
       }
 
       &-1-1,&-2-2,&-3-3{
@@ -633,11 +634,15 @@ padding-top: 0;
         }
 
         //***********************
+        .card{
+          margin-top:5vh;
+        }
         //card1
         .card1{
           width:350px;
-          height:350px; 
+          height:400px; 
           margin-left:2vw;
+          margin-top:20vh;
 
           .card1_img{
               
