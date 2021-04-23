@@ -59,6 +59,10 @@
         </style>
     </head>
     <body>
+        <div class="loader" id="loader" style="height: 100%; width: 100%; opacity: 100%;z-index: 1000;">
+            <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_40upoonw.json" background="transparent"
+                speed="1" loop autoplay></lottie-player>
+        </div>        
         <nav class="navigation">
             <div class="nav-menu">
                 <ul>
@@ -1921,7 +1925,12 @@
     <script src="./js/hacks/hacks.js"></script>
     <script src="./js/hacks/scroll.js"></script>
     <script src="./js/hacks/events.js"></script>
-
+    <script>
+        document.onload(function(){
+            var loader=document.getElementById("loader");
+            loader.style.display="none";
+        });
+    </script>
     <script>
         AOS.init({
             duration: 1000,
