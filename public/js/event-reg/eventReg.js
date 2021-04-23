@@ -104,6 +104,17 @@ const modules = [
                 maxm: 3
             }
         ]
+    },
+    {
+        moduleName: "NITS Hacks 4.0",
+        events:[
+            {
+                eventName: "Inter College Coding Competition",
+                teamBased: true,
+                minm: 1,
+                maxm: 3
+            }
+        ]
     }
 ] ;
 
@@ -196,4 +207,14 @@ function displayBlock(list){
     Array.from(list.querySelectorAll('input')).map(inField => {
         inField.style.display = "block";
     })
+}
+
+
+function onlyNumberKey(evt) {
+          
+	// Only ASCII charactar in that range allowed
+	var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+	if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+		return false;
+	return true;
 }
