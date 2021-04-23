@@ -1027,7 +1027,7 @@ body {
 
 .team .team_gallery {
   width: 80vw;
-  height: 600vh;
+  height: 500vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1062,11 +1062,11 @@ body {
 .team .team_gallery-1 {
   height: 10vh;
   padding-top: 10vh;
-  margin-top: -80vh;
+  margin-top: -100vh;
 }
 
 .team .team_gallery-2 {
-  height: 160vh;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.8);
   padding-bottom: 2rem;
   margin-top: -60vh;
@@ -1318,12 +1318,12 @@ body {
 }
 
 .team .team_gallery-3 {
-  height: 70vh;
+  height: 0vh;
   margin-top: 0vh;
 }
 
 .team .team_gallery-3 .team_gallery-3-3 {
-  height: 70vh;
+  height: 50vh;
   margin-top: 20vh;
 }
 
@@ -2481,7 +2481,7 @@ body {
     display: none;
   }
   .event {
-    height: 340vh;
+    height: 300vh;
   }
   .event-1, .event-2, .event-3, .event-4 {
     margin-top: 100px;
