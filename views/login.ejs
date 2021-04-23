@@ -29,18 +29,18 @@
         <p>Don't have an account?</p>
 
         <label for="name">Full name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" required>
         <!-- <label for="pin">PIN:</label><br>
 			<input type="text" id="pin" name="pin" maxlength="4" size="4"><br> -->
         <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
         <label for="phone">Phone:</label>
-        <input type="number" id="phone" name="phone">
+        <input type="tel" pattern="^[0-9]{10}$" title="10 digit phone number" onkeypress="return onlyNumberKey(event)" id="phone" name="phone" required>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8">
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required>
         <label for="password">Confirm Password</label>
         <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password"
-          minlength="8">
+          minlength="8" required>
         <button type="submit">Sign Up</button>
       </form>
 
@@ -57,9 +57,9 @@
         <p>Welcome, We missed you!</p>
 
         <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8">
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required>
         <button type="submit">Sign In</button>
       </form>
 
@@ -90,7 +90,7 @@
   </div>
   <!-- partial -->
   <script src="/js/login/login.js"></script>
-
+  
 </body>
 
 </html>
