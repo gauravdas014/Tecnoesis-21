@@ -1229,7 +1229,7 @@ textarea + .parsley-errors-list {
     position: absolute;
     margin-top: 0rem;
     /* margin-left: 0rem; */
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     left: 46%;
     transform: translateX(-50%);
     width: 90% !important;
@@ -1259,7 +1259,7 @@ textarea + .parsley-errors-list {
     display: block;
     width: 10rem;
     top: 20rem;
-    margin-top: 10rem;
+    margin-top: 7rem;
     margin-left: 0rem;
     font-size: 0.8rem;
     text-decoration: underline;
@@ -1278,7 +1278,7 @@ textarea + .parsley-errors-list {
     position: absolute;
     margin-top: -9rem;
     /* margin-left: 0rem; */
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;

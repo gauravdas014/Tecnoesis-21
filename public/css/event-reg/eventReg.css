@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
@@ -16,6 +16,27 @@ body {
   background-size: cover;
 }
 
+#moduleName {
+  height: 55px;
+  font-size: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+#eventName {
+  height: 50px;
+  font-size: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 input {
   padding: 0.8rem 0.5rem;
 }
@@ -25,15 +46,15 @@ input:focus, select:focus {
 }
 
 input, select {
-  height: 35px;
-  padding: 0.5rem;
-  border: none;
+  height: 55px;
   border-bottom: 1px solid rgba(134, 134, 134, 0.274);
   background-color: rgba(255, 255, 255, 0.322);
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: 400;
   color: #0f070f;
   font-size: medium;
+  border: 1px grey solid;
+  background-color: whitesmoke;
 }
 
 select, option {
@@ -46,7 +67,8 @@ select, option {
 }
 
 .outContainer .event_registration {
-  background-color: rgba(255, 255, 255, 0.747);
+  background: no-repeat;
+  background-image: url("../../images/bgg.png");
   position: relative;
   min-height: 90vh;
   width: 60vw;
@@ -110,11 +132,7 @@ select, option {
 
 .outContainer .event_registration .head {
   font-size: 40px;
-  color: #0a375c;
-  margin-left: 50%;
-  margin-top: -8%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin-top: -80px;
 }
 
 .outContainer .event_registration .eventRegForm {
@@ -196,6 +214,15 @@ select, option {
 }
 
 @media (max-width: 700px) {
+  input, select {
+    height: 50px;
+  }
+  label {
+    font-size: 15px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .outContainer {
     min-height: 100vh;
     width: 100vw;
@@ -235,7 +262,6 @@ select, option {
     font-size: 25px;
     color: #0a375c;
     white-space: nowrap;
-    margin-left: 65%;
     margin-top: 10%;
   }
   .outContainer .event_registration .eventRegForm {
