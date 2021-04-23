@@ -148,13 +148,20 @@ function memberNumberChange(){
         return selectedEventName === mod.eventName
     })
     if( !requiredEvent.teamBased ){
-        individualBlock.style.display = 'block';
-        teamBlock.style.display = 'none';
-        
+        individualBlock.style.display = "block";
+        teamBlock.style.display = "none";
+
+        displayNone(teamBlock);
+        displayBlock(individualBlock);
+    
     }
     else{
-        individualBlock.style.display = 'none';
-        teamBlock.style.display = 'block';
+        individualBlock.style.display = "none";
+        teamBlock.style.display = "block";
+
+        displayNone(individualBlock);
+        displayBlock(teamBlock);
+
         var count = 2;
         var extraMem = "";
         while(count <= requiredEvent.minm){
@@ -177,4 +184,16 @@ function memberNumberChange(){
         }
         document.querySelector('.team_members').innerHTML = extraMem;
     }
+}
+
+function displayNone(list){
+    Array.from(list.querySelectorAll('input')).map(inField => {
+        inField.style.display = "none";
+    })
+}
+
+function displayBlock(list){
+    Array.from(list.querySelectorAll('input')).map(inField => {
+        inField.style.display = "block";
+    })
 }
