@@ -47,10 +47,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Stylings -->
 </head>
-<div class="loader" id="loader">
-    <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_40upoonw.json" background="transparent"
-        speed="1" loop autoplay></lottie-player>
-</div>
+<!-- <div class="loader" id="loader" style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;height: 100%; width: 100%; ">
+    <div class="status"><lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_40upoonw.json" background="transparent"
+        speed="1" loop autoplay></lottie-player></div>
+</div> -->
 <body>
     <nav class="navbar">
         <div class="content">
@@ -254,11 +254,12 @@
         </section>
     </main>
 </body>
-<script> 
-    document.onload(function(){
-        window.scrollTo(0,0);
-        var loader=document.getElementById("loader");
-        loader.style.display="none";
-    });
+<script>
+jQuery(window).load(function() {
+// will first fade out the loading animation
+jQuery("#status").fadeOut();
+// will fade out the whole DIV that covers the website.
+jQuery("#loader").delay(1000).fadeOut("slow");
+})
 </script>
 </html>
