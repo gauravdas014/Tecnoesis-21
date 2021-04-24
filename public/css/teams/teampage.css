@@ -82,6 +82,7 @@ section {
 }
 
 @media only screen and (max-width: 850px) {
+
   /* For mobile phones: */
 [class*="column2"] {
     display: block;
@@ -91,6 +92,11 @@ section {
     width: 90%;
     justify-content: center;
     display: block;
+    height: auto !important;
+  }
+  section h1{
+    padding: 6% 0 !important;
+    /* padding-bottom: calc(6% + 40px) !important; */
   }
 
   [class*="single"] {
@@ -360,7 +366,9 @@ section {
       height: 100%;
     }
 	}
-
+.column1 a{
+  text-decoration: none;
+}
 a h4{
     color: #fff;
     white-space: nowrap;
