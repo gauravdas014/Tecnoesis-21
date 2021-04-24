@@ -334,7 +334,7 @@ section {
 
   .team-button {
     display: block;
-    background: #810a77;
+    background: white;
     color: #000;
     height: 40px;
     width: 40px;
@@ -343,7 +343,7 @@ section {
     opacity: 0;
   }
   .team-button .fa {
-    margin-top: 10px;
+    margin-top: 12px;
 
   }
 
