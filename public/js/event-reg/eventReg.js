@@ -79,7 +79,7 @@ const modules = [
                 eventName: 'Mini-Militia',
                 teamBased: true,
                 minm: 1,
-                maxm: 4,
+                maxm: 3,
             },
         ],
     },
