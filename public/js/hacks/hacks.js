@@ -1,5 +1,5 @@
 const navLinks = document.querySelectorAll('.nav-links')
-const sections = document.querySelectorAll('.section');
+const sections = document.querySelectorAll('.navS');
 
 // scroll
 const hacksScroll = (sectionID) => {
@@ -22,6 +22,9 @@ const hacksScroll = (sectionID) => {
 // navigation
 for (let index = 0; index < navLinks.length; index++) {
     navLinks[index].addEventListener('click', function () {
+
+            console.log(index);
+
             for (let i = 0; i < index; i++) {
                 document
                     .getElementById(`dot--${i}`)
@@ -79,7 +82,8 @@ window.addEventListener('scroll', () => {
     else if(current === 'about') index=1;
     else if (current === 'schedule') index =2;
     else if (current === 'events') index =3;
-    else if(current === 'contact') index =4;
+    else if (current === 'team') index =4;
+    else if(current === 'contact') index =5;
 
        for (let i = 0; i < index; i++) {
            document
@@ -103,7 +107,7 @@ window.addEventListener('scroll', () => {
     }
 
      if (index === 0) {
-         for (let i = 1; i < 5; i++) {
+         for (let i = 1; i < 6; i++) {
              document
                  .getElementById(`dot--${i}`)
                  .classList.remove('active', 'go-up', 'dot')
