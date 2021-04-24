@@ -334,7 +334,7 @@ section {
 
   .team-button {
     display: block;
-    background: #00FFA4;
+    background: #810a77;
     color: #000;
     height: 40px;
     width: 40px;
@@ -381,6 +381,7 @@ a h4{
 
 a:hover h4{
   transition: all 0.5s;
+  white-space: nowrap;
   color: #00d2ff;
   font-size: 2rem;
   white-space: nowrap;
@@ -396,11 +397,11 @@ a:hover h4{
 
 @-webkit-keyframes shine {
   from {
-    -webkit-mask-position: 150%;
+    -webkit-mask-position: 50%;
   }
   
   to {
-    -webkit-mask-position: -50%;
+    -webkit-mask-position: 150%;
   }
 }
 
