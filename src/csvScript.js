@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 // require('dotenv').config()
 mongoose
     .connect(
-        'mongodb+srv://tecnoesis:tecnoesis@cluster0.m0nlm.mongodb.net/prod?retryWrites=true&w=majority',
+        'URL',
         {
             useNewUrlParser: true,
             useUnifiedTopology: true,
