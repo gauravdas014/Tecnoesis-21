@@ -1,220 +1,221 @@
 const modules = [
     {
-        moduleName: "Empressario",
+        moduleName: 'Empressario',
         events: [
             {
-                eventName: "Pitch Please",
+                eventName: 'Pitch Please',
                 teamBased: true,
                 minm: 1,
-                maxm: 4
+                maxm: 4,
             },
             {
-                eventName: "Ad-ovation",
+                eventName: 'Ad-ovation',
                 teamBased: true,
                 minm: 1,
-                maxm: 7
-            }
-        ]
+                maxm: 7,
+            },
+        ],
     },
     {
-        moduleName: "CyberWarp",
+        moduleName: 'CyberWarp',
         events: [
             {
-                eventName: "Nibble Code",
-                teamBased: false
+                eventName: 'Nibble Code',
+                teamBased: false,
             },
             {
-                eventName: "Pixelate 2021",
-                teamBased: false
+                eventName: 'Pixelate 2021',
+                teamBased: false,
             },
             {
-                eventName: "Data Strata",
+                eventName: 'Data Strata',
                 teamBased: true,
                 minm: 1,
-                maxm: 3
+                maxm: 3,
             },
             {
-                eventName: "Cyberbot",
+                eventName: 'Cyberbot',
                 teamBased: true,
                 minm: 1,
-                maxm: 3
-            }
-        ]
+                maxm: 3,
+            },
+        ],
     },
     {
-        moduleName: "ASME",
+        moduleName: 'ASME',
         events: [
             {
-                eventName:"Plot Twist",
-                teamBased: false
+                eventName: 'Plot Twist',
+                teamBased: false,
             },
             {
-                eventName: "Mascot Making",
+                eventName: 'Mascot Making',
                 teamBased: true,
                 minm: 1,
-                maxm: 2
+                maxm: 2,
             },
             {
-                eventName: "Draft Ritz 4.0",
-                teamBased: false
+                eventName: 'Draft Ritz 4.0',
+                teamBased: false,
             },
             {
-                eventName: "Pitch the car",
+                eventName: 'Pitch the car',
                 teamBased: true,
                 minm: 1,
-                maxm: 4
-            }
-        ]
+                maxm: 4,
+            },
+        ],
     },
     {
-        moduleName: "V-warz",
+        moduleName: 'V-warz',
         events: [
             {
-                eventName: "Call of Duty Mobile",
-                teamBased: true,    
-                minm: 1,
-                maxm: 5           
-            },
-            {
-                eventName: "Mini-Militia",
+                eventName: 'Call of Duty Mobile',
                 teamBased: true,
                 minm: 1,
-                maxm: 4
-            }
-        ]
+                maxm: 5,
+            },
+            {
+                eventName: 'Mini-Militia',
+                teamBased: true,
+                minm: 1,
+                maxm: 3,
+            },
+        ],
     },
     {
-        moduleName: "Smart City",
+        moduleName: 'Smart City',
         events: [
             {
-                eventName: "My City My Dream",
+                eventName: 'My City My Dream',
                 teamBased: true,
                 minm: 2,
-                maxm: 3
-            }
-        ]
+                maxm: 3,
+            },
+        ],
     },
     {
-        moduleName: "Robotics",
+        moduleName: 'Robotics',
         events: [
             {
-                eventName: "Robo Mania",
+                eventName: 'Robo Mania',
                 teamBased: true,
                 minm: 1,
-                maxm: 3
-            }
-        ]
+                maxm: 3,
+            },
+        ],
     },
     {
-        moduleName: "NITS Hacks 4.0",
-        events:[
+        moduleName: 'NITS Hacks 4.0',
+        events: [
             {
-                eventName: "Inter College Coding Competition",
+                eventName: 'Inter College Coding Competition',
                 teamBased: true,
                 minm: 1,
-                maxm: 3
-            }
-        ]
-    }
-] ;
+                maxm: 3,
+            },
+        ],
+    },
+    {
+        moduleName: 'Myndsnare',
+        events: [
+            {
+                eventName: 'The Sound and The Fury',
+                teamBased: false,
+            },
+        ],
+    },
+]
 
-var moduleDropdown = document.querySelector('#moduleName');
-var eventDropdown = document.querySelector('#eventName');
-var individualBlock = document.querySelector('.indivisual');
-var teamBlock = document.querySelector('.team_event');
+var moduleDropdown = document.querySelector('#moduleName')
+var eventDropdown = document.querySelector('#eventName')
+var individualBlock = document.querySelector('.indivisual')
+var teamBlock = document.querySelector('.team_event')
 
+moduleDropdown.addEventListener('change', searchForModule)
+searchForModule.call(moduleDropdown)
 
-moduleDropdown.addEventListener('change', searchForModule);
-searchForModule.call(moduleDropdown);
-
-function searchForParticluarModule(selectedModule){
-    var requiredModule = modules.find( mod => {
-        return mod.moduleName === selectedModule;
+function searchForParticluarModule(selectedModule) {
+    var requiredModule = modules.find((mod) => {
+        return mod.moduleName === selectedModule
     })
-    return requiredModule;
+    return requiredModule
 }
 
-function searchForModule(){
-    var selectedModule = this.value;
+function searchForModule() {
+    var selectedModule = this.value
     var requiredModule = searchForParticluarModule(selectedModule)
-    populateEvents(requiredModule);
+    populateEvents(requiredModule)
 }
 
-function populateEvents (requiredModule){
-    var options = "";
-    requiredModule.events.map( eve => {
+function populateEvents(requiredModule) {
+    var options = ''
+    requiredModule.events.map((eve) => {
         options += `<option value="${eve.eventName}">${eve.eventName}</option>`
     })
-    eventDropdown.innerHTML = options;
-    memberNumberChange.call(eventDropdown);
+    eventDropdown.innerHTML = options
+    memberNumberChange.call(eventDropdown)
 }
 
-eventDropdown.addEventListener('change', memberNumberChange);
+eventDropdown.addEventListener('change', memberNumberChange)
 
-function memberNumberChange(){
-    var selectedEventName = this.value;
-    var selectedModuleName = moduleDropdown.value;
-    var requiredModule = searchForParticluarModule(selectedModuleName);
-    var requiredEvent = requiredModule.events.find(mod => {
+function memberNumberChange() {
+    var selectedEventName = this.value
+    var selectedModuleName = moduleDropdown.value
+    var requiredModule = searchForParticluarModule(selectedModuleName)
+    var requiredEvent = requiredModule.events.find((mod) => {
         return selectedEventName === mod.eventName
     })
-    if( !requiredEvent.teamBased ){
-        individualBlock.style.display = "block";
-        teamBlock.style.display = "none";
+    if (!requiredEvent.teamBased) {
+        individualBlock.style.display = 'block'
+        teamBlock.style.display = 'none'
 
-        displayNone(teamBlock);
-        displayBlock(individualBlock);
-    
-    }
-    else{
-        individualBlock.style.display = "none";
-        teamBlock.style.display = "block";
+        displayNone(teamBlock)
+        displayBlock(individualBlock)
+    } else {
+        individualBlock.style.display = 'none'
+        teamBlock.style.display = 'block'
 
-        displayNone(individualBlock);
-        displayBlock(teamBlock);
+        displayNone(individualBlock)
+        displayBlock(teamBlock)
 
-        var count = 2;
-        var extraMem = "";
-        while(count <= requiredEvent.minm){
-            var requiredMemberString = 
-            `<div class="team_member fl">
+        var count = 2
+        var extraMem = ''
+        while (count <= requiredEvent.minm) {
+            var requiredMemberString = `<div class="team_member fl">
                 <label>Team Member Name (Member - ${count})*</label>
                 <input type='text' name='team_member_name_${count}' required/>
-            </div>`;
-            extraMem+= requiredMemberString;
-            count++;
+            </div>`
+            extraMem += requiredMemberString
+            count++
         }
-        while(count <= requiredEvent.maxm){
-            var memeberString = 
-            `<div class="team_member fl">
+        while (count <= requiredEvent.maxm) {
+            var memeberString = `<div class="team_member fl">
             <label>Team Member Name (Member - ${count})</label>
             <input type='text' name='team_member_name_${count}' />
-            </div>`;
-            extraMem+= memeberString;
-            count++;
+            </div>`
+            extraMem += memeberString
+            count++
         }
-        document.querySelector('.team_members').innerHTML = extraMem;
+        document.querySelector('.team_members').innerHTML = extraMem
     }
 }
 
-function displayNone(list){
-    Array.from(list.querySelectorAll('input')).map(inField => {
-        inField.style.display = "none";
+function displayNone(list) {
+    Array.from(list.querySelectorAll('input')).map((inField) => {
+        inField.style.display = 'none'
     })
 }
 
-function displayBlock(list){
-    Array.from(list.querySelectorAll('input')).map(inField => {
-        inField.style.display = "block";
+function displayBlock(list) {
+    Array.from(list.querySelectorAll('input')).map((inField) => {
+        inField.style.display = 'block'
     })
 }
-
 
 function onlyNumberKey(evt) {
-          
-	// Only ASCII charactar in that range allowed
-	var ASCIICode = (evt.which) ? evt.which : evt.keyCode
-	if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
-		return false;
-	return true;
+    // Only ASCII charactar in that range allowed
+    var ASCIICode = evt.which ? evt.which : evt.keyCode
+    if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) return false
+    return true
 }

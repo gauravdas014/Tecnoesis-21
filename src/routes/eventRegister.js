@@ -49,6 +49,9 @@ const EVENTS = {
     'Inter College Coding Competition': {
         teamBased: true,
     },
+    'The Sound and The Fury': {
+        teamBased: false,
+    },
 }
 
 router.get('/', userAuth, (req, res) => {
@@ -63,6 +66,7 @@ router.post('/', userAuth, async (req, res) => {
             eventName: req.body.eventName,
             isTeamBased: EVENTS[req.body.eventName].teamBased,
             moduleName: req.body.moduleName,
+            collegeName: req.body.collegeName
         })
         // console.log({ event })
         if (event.isTeamBased) {

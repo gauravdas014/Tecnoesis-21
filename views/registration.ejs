@@ -57,6 +57,7 @@
                         <option value="V-warz">V-warz</option>
                         <option value="Smart City">Smart City</option>
                         <option value="Robotics">Robotics</option>
+                        <option value="Myndsnare">Myndsnare</option>
                         <!-- <option value="NITS Hacks 4.0">NITS Hacks 4.0</option> -->
                     </select>
                 </div>
@@ -64,6 +65,10 @@
                 <div class='events_associated fl'>
                     <label>Event Name</label>
                     <select name="eventName" id="eventName"></select>
+                </div>
+                <div class='events_associated fl'>
+                    <label>College Name*</label>
+                    <input type="text" name="collegeName" required>
                 </div>
 
                 <div class='team_event hide'>
@@ -112,7 +117,7 @@
                     </div>
 
                     <div class="phoneNo_e fl">
-                        <label>Phone Number*</label>
+                        <label>Phone Number( Whatsapp No. )*</label>
                         <input type="tel" pattern="^[0-9]{10}$" title="10 digit phone number"
                             onkeypress="return onlyNumberKey(event)" name='phone_No' />
                     </div>
