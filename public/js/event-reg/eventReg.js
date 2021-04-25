@@ -24,10 +24,6 @@ const modules = [
                 teamBased: false,
             },
             {
-                eventName: 'Pixelate 2021',
-                teamBased: false,
-            },
-            {
                 eventName: 'Data Strata',
                 teamBased: true,
                 minm: 1,
@@ -54,10 +50,10 @@ const modules = [
                 minm: 1,
                 maxm: 2,
             },
-            {
-                eventName: 'Draft Ritz 4.0',
-                teamBased: false,
-            },
+            // {
+            //     eventName: 'Draft Ritz 4.0',
+            //     teamBased: false,
+            // },
             {
                 eventName: 'Pitch the car',
                 teamBased: true,

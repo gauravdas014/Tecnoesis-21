@@ -51,7 +51,7 @@ router.post('/login', async (req, res) => {
 
         const user = await User.findByCredentials(email, password)
 
-        console.log('user', user)
+        // console.log('user', user)
 
         if (!user) {
             req.flash('error_msg', 'No User Found')
