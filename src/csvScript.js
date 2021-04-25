@@ -3,15 +3,12 @@ const { User } = require('./models')
 const mongoose = require('mongoose')
 // require('dotenv').config()
 mongoose
-    .connect(
-        'URL',
-        {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useFindAndModify: false,
-            useCreateIndex: true,
-        }
-    )
+    .connect('URL', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useFindAndModify: false,
+        useCreateIndex: true,
+    })
     .then(() => {
         console.log('Database connected')
         generateCSV()
@@ -31,17 +28,7 @@ const generateCSV = async () => {
                 if (!eventRegistration.hasOwnProperty(event.eventName)) {
                     eventRegistration[event.eventName] = new Array()
                 }
-                if (event.isTeamBased) {
-                    eventRegistration[event.eventName].push({
-                        Email: event.teamLeaderEmail,
-                        Phone: event.teamLeaderPhone,
-                    })
-                } else {
-                    eventRegistration[event.eventName].push({
-                        Email: event.participantEmail,
-                        Phone: event.participantPhone,
-                    })
-                }
+                eventRegistration[event.eventName].push(event)
             })
         })
 
